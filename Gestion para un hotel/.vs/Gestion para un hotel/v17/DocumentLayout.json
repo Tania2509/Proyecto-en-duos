@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Estudiante\\Desktop\\Actividad\\Gestion para un hotel\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{220858E9-1A9B-4CF7-B6EE-F8B382C7B0A4}|Metodos\\Modelos.csproj|c:\\users\\estudiante\\desktop\\actividad\\gestion para un hotel\\metodos\\conexion\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{220858E9-1A9B-4CF7-B6EE-F8B382C7B0A4}|Metodos\\Modelos.csproj|solutionrelative:metodos\\conexion\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|c:\\users\\estudiante\\desktop\\actividad\\gestion para un hotel\\vistas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|solutionrelative:vistas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -19,6 +23,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Conexion.cs",
+              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Actividad\\Gestion para un hotel\\Metodos\\Conexion\\Conexion.cs",
+              "RelativeDocumentMoniker": "Metodos\\Conexion\\Conexion.cs",
+              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\Actividad\\Gestion para un hotel\\Metodos\\Conexion\\Conexion.cs",
+              "RelativeToolTip": "Metodos\\Conexion\\Conexion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T21:38:27.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Actividad\\Gestion para un hotel\\Vistas\\Program.cs",
               "RelativeDocumentMoniker": "Vistas\\Program.cs",

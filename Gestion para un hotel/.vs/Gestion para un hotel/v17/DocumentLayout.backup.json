@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Estudiante\\Desktop\\Actividad\\Gestion para un hotel\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|c:\\users\\estudiante\\desktop\\actividad\\gestion para un hotel\\vistas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|solutionrelative:vistas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Actividad\\Gestion para un hotel\\Vistas\\Program.cs",
+              "RelativeDocumentMoniker": "Vistas\\Program.cs",
+              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\Actividad\\Gestion para un hotel\\Vistas\\Program.cs",
+              "RelativeToolTip": "Vistas\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T19:37:46.97Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

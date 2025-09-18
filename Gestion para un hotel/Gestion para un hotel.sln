@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metodos", "Metodos\Metodos.csproj", "{220858E9-1A9B-4CF7-B6EE-F8B382C7B0A4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelos", "Metodos\Modelos.csproj", "{220858E9-1A9B-4CF7-B6EE-F8B382C7B0A4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vistas", "Vistas\Vistas.csproj", "{8A89FE06-A423-4E6D-9F47-6D0148B904F3}"
 EndProject
