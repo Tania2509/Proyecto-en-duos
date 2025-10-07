@@ -33,6 +33,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,10 +43,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion\Conexion.cs" />
+    <Compile Include="Entidades\CheckInOut.cs" />
+    <Compile Include="Entidades\Cliente.cs" />
+    <Compile Include="Entidades\EstadoReserva.cs" />
+    <Compile Include="Entidades\Habitacion.cs" />
+    <Compile Include="Entidades\Pago.cs" />
+    <Compile Include="Entidades\Reserva.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Modelos\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
