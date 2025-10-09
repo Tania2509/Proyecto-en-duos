@@ -15,30 +15,16 @@ namespace Vistas.Vistas
 {
     public partial class frnCheckIn : UserControl
     {
-        private frnGestionReservas gestionReservas; 
+        private frnGestionReservas gestionReservas;
 
         public frnCheckIn(frnGestionReservas gestionReservas)
         {
             InitializeComponent();
             this.gestionReservas = gestionReservas;
+            CheckOut = new frnCheckOut(gestionReservas);
         }
 
-
-        private void txtDui_TextChanged(object sender, EventArgs e)
-        {
-            string dui = txtDui.Text.Trim();
-
-            // Si no hay nada escrito, limpiamos la tabla
-            if (string.IsNullOrEmpty(txtDui.Text))
-            {
-                dgvReservas.DataSource = null;
-                return;
-            }
-
-            // Buscar en la base de datos
-            DataTable resultados = CheckInOut.BuscarReservasCheckIn(dui);
-            dgvReservas.DataSource = resultados;
-        }
+        private frnCheckOut CheckOut;
 
         private void btnCheckIn_Click(object sender, EventArgs e)
         {
@@ -55,11 +41,10 @@ namespace Vistas.Vistas
             if (resultado)
             {
                 MessageBox.Show("Check-In realizado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                txtDui.Clear();
-                dgvReservas.DataSource = null;
 
-                // Llamar al método CargarReserva de frnGestionReservas
                 gestionReservas.CargarReserva();
+                MostrarEspera();
+                CheckOut.MostrarEstancia();
             }
             else
             {
@@ -75,6 +60,16 @@ namespace Vistas.Vistas
                 string idReserva = dgvReservas.Rows[e.RowIndex].Cells["idReserva"].Value.ToString();
                 Console.WriteLine("Reserva seleccionada: " + idReserva);
             }
+        }
+
+        private void frnCheckIn_Load(object sender, EventArgs e)
+        {
+            MostrarEspera();
+        }
+        public void MostrarEspera()
+        {
+            dgvReservas.DataSource = null;
+            dgvReservas.DataSource = CheckInOut.MostrarReservasCheckIN();
         }
     }
 

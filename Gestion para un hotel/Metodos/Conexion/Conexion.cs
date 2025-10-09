@@ -9,7 +9,7 @@ namespace Metodos.Conexion
 {
     public class Conexion
     {
-        private static string servidor = "ODIE\\SQLEXPRESS01";
+        private static string servidor = "LAB02-DS-EQ24\\SQLEXPRESS";
         private static string database = "Hotel";
         public static SqlConnection conectar()
         {

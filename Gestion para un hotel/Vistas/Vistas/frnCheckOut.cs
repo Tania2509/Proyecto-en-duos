@@ -15,26 +15,12 @@ namespace Vistas.Vistas
     {
         private frnGestionReservas gestionReservas; // Campo privado
 
+        private frnCheckOut CheckOut;
+
         public frnCheckOut(frnGestionReservas gestionReservas)
         {
             InitializeComponent();
             this.gestionReservas = gestionReservas;
-        }
-
-        private void txtDui_TextChanged(object sender, EventArgs e)
-        {
-            string dui = txtDui.Text.Trim();
-
-            // Si no hay nada escrito, limpiamos la tabla
-            if (string.IsNullOrEmpty(txtDui.Text))
-            {
-                dgvReservas.DataSource = null;
-                return;
-            }
-
-            // Buscar en la base de datos
-            DataTable resultados = CheckInOut.BuscarReservasCheckIn(dui);
-            dgvReservas.DataSource = resultados; // Asignar los resultados obtenidos
         }
 
         private void btnCheckOut_Click(object sender, EventArgs e)
@@ -54,15 +40,15 @@ namespace Vistas.Vistas
             if (resultado)
             {
                 MessageBox.Show("Check-Out realizado con éxito.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                txtDui.Clear();
-                dgvReservas.DataSource = null;
                 gestionReservas.CargarReserva(); // Actualizar la lista de reservas en frnGestionReservas
+                MostrarEstancia();
             }
             else
             {
                 MessageBox.Show("No se pudo completar el Check-Out.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
+        } 
+
         private void dgvReservas_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
@@ -71,6 +57,17 @@ namespace Vistas.Vistas
                 string idReserva = dgvReservas.Rows[e.RowIndex].Cells["idReserva"].Value.ToString();
                 Console.WriteLine("Reserva seleccionada: " + idReserva);
             }
+        }
+
+        private void frnCheckOut_Load(object sender, EventArgs e)
+        {
+            MostrarEstancia();
+        }
+
+        public void MostrarEstancia()
+        {
+            dgvReservas.DataSource = null;
+            dgvReservas.DataSource = CheckInOut.MostrarReservasCheckOut();
         }
     }
 }

@@ -12,12 +12,12 @@ namespace Metodos.Entidades
     public class Ingreso
     {
 
-        public static DataTable CargarReservas()
+        public static DataTable CargarIngresos()
         {
             try
             {
                 SqlConnection conexion = Conexion.Conexion.conectar();
-                string cadena = "SELECT I.idIngreso, C.nombreCli + ' ' + C.apellidoCli AS Cliente,  I.fechaIngreso, I.montoHabitacion, I.montoServicios, I.montoTotal\r\nFROM Ingreso I\r\nINNER JOIN Reserva R ON I.idReserva = R.idReserva\r\nINNER JOIN Cliente C ON R.id_Cliente = C.idCliente";
+                string cadena = "select *from Ingreso";
                 SqlDataAdapter data = new SqlDataAdapter(cadena, conexion);
                 DataTable tablavirtual = new DataTable();
                 data.Fill(tablavirtual);
@@ -38,7 +38,7 @@ namespace Metodos.Entidades
                     // 1️⃣ Obtener precio de habitación
                     string sqlHabitacion = @"SELECT H.precio
                                          FROM Reserva R
-                                         INNER JOIN Habitacion H ON R.id_Habitacion = H.idHabitacion
+                                         INNER JOIN Habitacion H ON R.id_Habitacion = H.idHabitaciones
                                          WHERE R.idReserva = @idReserva";
 
                     SqlCommand cmdHab = new SqlCommand(sqlHabitacion, con);
@@ -48,8 +48,8 @@ namespace Metodos.Entidades
                     // 2️⃣ Calcular total de servicios
                     string sqlServicios = @"SELECT ISNULL(SUM(S.precio), 0)
                                         FROM Consumo C
-                                        INNER JOIN Servicio S ON C.idServicio = S.idServicio
-                                        WHERE C.idReserva = @idReserva";
+                                        INNER JOIN Servicio S ON C.id_Servicio = S.idServicio
+                                        WHERE C.id_Reserva = @idReserva";
 
                     SqlCommand cmdServ = new SqlCommand(sqlServicios, con);
                     cmdServ.Parameters.AddWithValue("@idReserva", idReserva);
@@ -57,8 +57,8 @@ namespace Metodos.Entidades
 
                     decimal totalGeneral = precioHabitacion + totalServicios;
 
-                    // 3️⃣ Insertar el ingreso
-                    string sqlInsert = @"INSERT INTO Ingreso (idReserva, fechaIngreso, montoHabitacion, montoServicios, montoTotal)
+                    // 3Insertar el ingreso
+                    string sqlInsert = @"INSERT INTO Ingreso (id_Reserva, fecha, habitación, servicio, general)
                                      VALUES (@idReserva, GETDATE(), @montoHabitacion, @montoServicios, @montoTotal)";
 
                     SqlCommand cmdInsert = new SqlCommand(sqlInsert, con);

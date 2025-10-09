@@ -28,27 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblDui = new System.Windows.Forms.Label();
             this.btnCheckOut = new System.Windows.Forms.Button();
             this.dgvReservas = new System.Windows.Forms.DataGridView();
-            this.txtDui = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReservas)).BeginInit();
             this.SuspendLayout();
             // 
-            // lblDui
-            // 
-            this.lblDui.AutoSize = true;
-            this.lblDui.Location = new System.Drawing.Point(109, 120);
-            this.lblDui.Name = "lblDui";
-            this.lblDui.Size = new System.Drawing.Size(94, 16);
-            this.lblDui.TabIndex = 7;
-            this.lblDui.Text = "Dui del cliente:";
-            // 
             // btnCheckOut
             // 
-            this.btnCheckOut.Location = new System.Drawing.Point(1001, 514);
+            this.btnCheckOut.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnCheckOut.Location = new System.Drawing.Point(798, 445);
+            this.btnCheckOut.Margin = new System.Windows.Forms.Padding(2);
             this.btnCheckOut.Name = "btnCheckOut";
-            this.btnCheckOut.Size = new System.Drawing.Size(175, 60);
+            this.btnCheckOut.Size = new System.Drawing.Size(131, 49);
             this.btnCheckOut.TabIndex = 6;
             this.btnCheckOut.Text = "Realizar Check Out";
             this.btnCheckOut.UseVisualStyleBackColor = true;
@@ -56,44 +47,36 @@
             // 
             // dgvReservas
             // 
+            this.dgvReservas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvReservas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvReservas.Location = new System.Drawing.Point(100, 227);
+            this.dgvReservas.Location = new System.Drawing.Point(75, 227);
+            this.dgvReservas.Margin = new System.Windows.Forms.Padding(2);
             this.dgvReservas.Name = "dgvReservas";
             this.dgvReservas.RowHeadersWidth = 51;
             this.dgvReservas.RowTemplate.Height = 24;
-            this.dgvReservas.Size = new System.Drawing.Size(726, 347);
+            this.dgvReservas.Size = new System.Drawing.Size(603, 284);
             this.dgvReservas.TabIndex = 5;
             this.dgvReservas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvReservas_CellClick);
             // 
-            // txtDui
-            // 
-            this.txtDui.Location = new System.Drawing.Point(243, 117);
-            this.txtDui.Name = "txtDui";
-            this.txtDui.Size = new System.Drawing.Size(254, 22);
-            this.txtDui.TabIndex = 4;
-            this.txtDui.TextChanged += new System.EventHandler(this.txtDui_TextChanged);
-            // 
             // frnCheckOut
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.lblDui);
             this.Controls.Add(this.btnCheckOut);
             this.Controls.Add(this.dgvReservas);
-            this.Controls.Add(this.txtDui);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frnCheckOut";
-            this.Size = new System.Drawing.Size(1276, 690);
+            this.Size = new System.Drawing.Size(1016, 563);
+            this.Load += new System.EventHandler(this.frnCheckOut_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvReservas)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblDui;
         private System.Windows.Forms.Button btnCheckOut;
         private System.Windows.Forms.DataGridView dgvReservas;
-        private System.Windows.Forms.TextBox txtDui;
     }
 }

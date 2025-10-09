@@ -27,7 +27,7 @@ namespace Metodos.Entidades
             try
             {
                 SqlConnection conexion = Conexion.Conexion.conectar();
-                string cadena = "select *from Reservaciones;";
+                string cadena = "select *from Clientes where Estado = 'En estancia';";
                 SqlDataAdapter data = new SqlDataAdapter(cadena, conexion);
                 DataTable tablavirtual = new DataTable();
                 data.Fill(tablavirtual);

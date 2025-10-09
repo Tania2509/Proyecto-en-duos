@@ -39,7 +39,7 @@ namespace Vistas.Vistas
         private void CargarClientes()
         {
             dgvClientes.DataSource = null;
-            dgvClientes.DataSource = Cliente.CargarClientes();
+            dgvClientes.DataSource = Cliente.MostrarClientes();
         }
 
         private void frnConsumos_Load(object sender, EventArgs e)
@@ -80,10 +80,10 @@ namespace Vistas.Vistas
         private void CargarConsumos(int idReserva)
         {
             SqlConnection con = Metodos.Conexion.Conexion.conectar();
-            string sql = @"SELECT C.idConsumo, S.nombreServicio, S.precio, C.fechaConsumo
+            string sql = @"SELECT C.idConsumo, S.nombreServicio, S.precio, C.fecha
                        FROM Consumo C
-                       INNER JOIN Servicio S ON C.idServicio = S.idServicio
-                       WHERE C.idReserva = @idReserva";
+                       INNER JOIN Servicio S ON C.id_Servicio = S.idServicio
+                       WHERE C.id_Reserva = @idReserva";
 
             SqlDataAdapter da = new SqlDataAdapter(sql, con);
             da.SelectCommand.Parameters.AddWithValue("@idReserva", idReserva);
@@ -113,7 +113,11 @@ namespace Vistas.Vistas
         {
             if (e.RowIndex >= 0)
             {
-                idClienteSeleccionado = Convert.ToInt32(dgvClientes.Rows[e.RowIndex].Cells["idCliente"].Value);
+                idClienteSeleccionado = Convert.ToInt32(dgvClientes.Rows[e.RowIndex].Cells["Cliente"].Value);
+            }
+            else
+            {
+                MessageBox.Show("No hay datos");
             }
         }
     }

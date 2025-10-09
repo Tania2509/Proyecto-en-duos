@@ -1,78 +1,82 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\",
+  "WorkspaceRootPath": "C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\vistas\\vistas\\frnconsumos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|solutionrelative:vistas\\vistas\\frnconsumos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\vistas\\vistas\\frngestionreservas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|solutionrelative:vistas\\vistas\\frngestionreservas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\vistas\\vistas\\frngestionreservas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|solutionrelative:vistas\\vistas\\frngestionreservas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{220858E9-1A9B-4CF7-B6EE-F8B382C7B0A4}|Metodos\\Modelos.csproj|C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\metodos\\entidades\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{220858E9-1A9B-4CF7-B6EE-F8B382C7B0A4}|Metodos\\Modelos.csproj|solutionrelative:metodos\\entidades\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|c:\\users\\jrlop\\onedrive\\desktop\\proyecto-en-duos\\gestion para un hotel\\vistas\\vistas\\frncheckout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|solutionrelative:vistas\\vistas\\frncheckout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{220858E9-1A9B-4CF7-B6EE-F8B382C7B0A4}|Metodos\\Modelos.csproj|C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\metodos\\entidades\\checkinout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{220858E9-1A9B-4CF7-B6EE-F8B382C7B0A4}|Metodos\\Modelos.csproj|solutionrelative:metodos\\entidades\\checkinout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|c:\\users\\jrlop\\onedrive\\desktop\\proyecto-en-duos\\gestion para un hotel\\vistas\\vistas\\frncheckin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|solutionrelative:vistas\\vistas\\frncheckin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\vistas\\vistas\\frncheckout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|solutionrelative:vistas\\vistas\\frncheckout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|c:\\users\\jrlop\\onedrive\\desktop\\proyecto-en-duos\\gestion para un hotel\\vistas\\vistas\\frmdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|solutionrelative:vistas\\vistas\\frmdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\vistas\\vistas\\frnconsumos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|solutionrelative:vistas\\vistas\\frnconsumos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\vistas\\vistas\\frningresos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|solutionrelative:vistas\\vistas\\frningresos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\vistas\\vistas\\frmdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|solutionrelative:vistas\\vistas\\frmdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\vistas\\vistas\\frningresos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|solutionrelative:vistas\\vistas\\frningresos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{220858E9-1A9B-4CF7-B6EE-F8B382C7B0A4}|Metodos\\Modelos.csproj|C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\metodos\\entidades\\ingreso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{220858E9-1A9B-4CF7-B6EE-F8B382C7B0A4}|Metodos\\Modelos.csproj|C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\metodos\\entidades\\ingreso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{220858E9-1A9B-4CF7-B6EE-F8B382C7B0A4}|Metodos\\Modelos.csproj|solutionrelative:metodos\\entidades\\ingreso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{220858E9-1A9B-4CF7-B6EE-F8B382C7B0A4}|Metodos\\Modelos.csproj|C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\metodos\\conexion\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{220858E9-1A9B-4CF7-B6EE-F8B382C7B0A4}|Metodos\\Modelos.csproj|solutionrelative:metodos\\conexion\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{220858E9-1A9B-4CF7-B6EE-F8B382C7B0A4}|Metodos\\Modelos.csproj|C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\metodos\\entidades\\checkinout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{220858E9-1A9B-4CF7-B6EE-F8B382C7B0A4}|Metodos\\Modelos.csproj|solutionrelative:metodos\\entidades\\checkinout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{220858E9-1A9B-4CF7-B6EE-F8B382C7B0A4}|Metodos\\Modelos.csproj|C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\metodos\\entidades\\consumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{220858E9-1A9B-4CF7-B6EE-F8B382C7B0A4}|Metodos\\Modelos.csproj|solutionrelative:metodos\\entidades\\consumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\vistas\\vistas\\frncheckout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|solutionrelative:vistas\\vistas\\frncheckout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{220858E9-1A9B-4CF7-B6EE-F8B382C7B0A4}|Metodos\\Modelos.csproj|C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\metodos\\entidades\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\vistas\\vistas\\frngestionreservas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|solutionrelative:vistas\\vistas\\frngestionreservas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\vistas\\vistas\\frnconsumos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|solutionrelative:vistas\\vistas\\frnconsumos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\vistas\\vistas\\frmdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|solutionrelative:vistas\\vistas\\frmdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\vistas\\vistas\\frningresos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|solutionrelative:vistas\\vistas\\frningresos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\vistas\\vistas\\frncheckin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|solutionrelative:vistas\\vistas\\frncheckin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|c:\\users\\estudiante\\desktop\\proyecto-en-duos\\gestion para un hotel\\vistas\\vistas\\frncheckin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|solutionrelative:vistas\\vistas\\frncheckin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|c:\\users\\estudiante\\desktop\\proyecto-en-duos\\gestion para un hotel\\vistas\\vistas\\frnconsumos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|solutionrelative:vistas\\vistas\\frnconsumos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\vistas\\vistas\\frningresos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|solutionrelative:vistas\\vistas\\frningresos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\vistas\\vistas\\frncheckout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|solutionrelative:vistas\\vistas\\frncheckout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\vistas\\vistas\\frngestionreservas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|solutionrelative:vistas\\vistas\\frngestionreservas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{220858E9-1A9B-4CF7-B6EE-F8B382C7B0A4}|Metodos\\Modelos.csproj|C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\metodos\\entidades\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{220858E9-1A9B-4CF7-B6EE-F8B382C7B0A4}|Metodos\\Modelos.csproj|solutionrelative:metodos\\entidades\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\vistas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{220858E9-1A9B-4CF7-B6EE-F8B382C7B0A4}|Metodos\\Modelos.csproj|C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\metodos\\conexion\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{220858E9-1A9B-4CF7-B6EE-F8B382C7B0A4}|Metodos\\Modelos.csproj|solutionrelative:metodos\\conexion\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\vistas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|solutionrelative:vistas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{220858E9-1A9B-4CF7-B6EE-F8B382C7B0A4}|Metodos\\Modelos.csproj|C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\metodos\\entidades\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{220858E9-1A9B-4CF7-B6EE-F8B382C7B0A4}|Metodos\\Modelos.csproj|solutionrelative:metodos\\entidades\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\vistas\\vistas\\frmdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A89FE06-A423-4E6D-9F47-6D0148B904F3}|Vistas\\Vistas.csproj|solutionrelative:vistas\\vistas\\frmdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{220858E9-1A9B-4CF7-B6EE-F8B382C7B0A4}|Metodos\\Modelos.csproj|C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\metodos\\entidades\\consumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{220858E9-1A9B-4CF7-B6EE-F8B382C7B0A4}|Metodos\\Modelos.csproj|solutionrelative:metodos\\entidades\\consumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -82,70 +86,52 @@
       "DocumentGroups": [
         {
           "DockedWidth": 808,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "frnCheckOut.cs",
-              "DocumentMoniker": "C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frnCheckOut.cs",
-              "RelativeDocumentMoniker": "Vistas\\Vistas\\frnCheckOut.cs",
-              "ToolTip": "C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frnCheckOut.cs",
-              "RelativeToolTip": "Vistas\\Vistas\\frnCheckOut.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAIwDMAAABEAAAAAAAAAA==",
+              "Title": "frnConsumos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frnConsumos.cs",
+              "RelativeDocumentMoniker": "Vistas\\Vistas\\frnConsumos.cs",
+              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frnConsumos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Vistas\\Vistas\\frnConsumos.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T13:44:09.774Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-09T04:15:20.764Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "frnCheckIn.cs",
-              "DocumentMoniker": "C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frnCheckIn.cs",
-              "RelativeDocumentMoniker": "Vistas\\Vistas\\frnCheckIn.cs",
-              "ToolTip": "C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frnCheckIn.cs",
-              "RelativeToolTip": "Vistas\\Vistas\\frnCheckIn.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAuwDAAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T13:41:16.406Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "frmDashboard.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frmDashboard.cs",
+              "DocumentIndex": 5,
+              "Title": "frmDashboard.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frmDashboard.cs",
               "RelativeDocumentMoniker": "Vistas\\Vistas\\frmDashboard.cs",
-              "ToolTip": "C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frmDashboard.cs [Design]",
-              "RelativeToolTip": "Vistas\\Vistas\\frmDashboard.cs [Design]",
+              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frmDashboard.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Vistas\\Vistas\\frmDashboard.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-09T04:46:06.63Z",
-              "EditorCaption": " [Design]"
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "frnIngresos.cs",
-              "DocumentMoniker": "C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frnIngresos.cs",
-              "RelativeDocumentMoniker": "Vistas\\Vistas\\frnIngresos.cs",
-              "ToolTip": "C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frnIngresos.cs",
-              "RelativeToolTip": "Vistas\\Vistas\\frnIngresos.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAewA8AAAAcAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Ingreso.cs",
+              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Metodos\\Entidades\\Ingreso.cs",
+              "RelativeDocumentMoniker": "Metodos\\Entidades\\Ingreso.cs",
+              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Metodos\\Entidades\\Ingreso.cs",
+              "RelativeToolTip": "Metodos\\Entidades\\Ingreso.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAD4vzIAAABdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T04:42:20.919Z",
+              "WhenOpened": "2025-10-08T23:59:18.354Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "frnIngresos.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frnIngresos.cs",
+              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frnIngresos.cs",
               "RelativeDocumentMoniker": "Vistas\\Vistas\\frnIngresos.cs",
-              "ToolTip": "C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frnIngresos.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frnIngresos.cs [Dise\u00F1o]",
               "RelativeToolTip": "Vistas\\Vistas\\frnIngresos.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-09T04:41:37.264Z",
@@ -153,97 +139,101 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Conexion.cs",
-              "DocumentMoniker": "C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Metodos\\Conexion\\Conexion.cs",
-              "RelativeDocumentMoniker": "Metodos\\Conexion\\Conexion.cs",
-              "ToolTip": "C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Metodos\\Conexion\\Conexion.cs",
-              "RelativeToolTip": "Metodos\\Conexion\\Conexion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "frnIngresos.cs",
+              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frnIngresos.cs",
+              "RelativeDocumentMoniker": "Vistas\\Vistas\\frnIngresos.cs",
+              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frnIngresos.cs",
+              "RelativeToolTip": "Vistas\\Vistas\\frnIngresos.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAADwvxcAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T04:36:04.079Z"
+              "WhenOpened": "2025-10-09T04:42:20.919Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
+              "Title": "frnCheckOut.cs",
+              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frnCheckOut.cs",
+              "RelativeDocumentMoniker": "Vistas\\Vistas\\frnCheckOut.cs",
+              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frnCheckOut.cs",
+              "RelativeToolTip": "Vistas\\Vistas\\frnCheckOut.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAADwvyUAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T13:44:09.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "CheckInOut.cs",
-              "DocumentMoniker": "C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Metodos\\Entidades\\CheckInOut.cs",
+              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Metodos\\Entidades\\CheckInOut.cs",
               "RelativeDocumentMoniker": "Metodos\\Entidades\\CheckInOut.cs",
-              "ToolTip": "C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Metodos\\Entidades\\CheckInOut.cs",
+              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Metodos\\Entidades\\CheckInOut.cs",
               "RelativeToolTip": "Metodos\\Entidades\\CheckInOut.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCsAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAJoAAAAAAAAAAAAtwLgAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-09T04:31:35.855Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frnConsumos.cs",
-              "DocumentMoniker": "C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frnConsumos.cs",
-              "RelativeDocumentMoniker": "Vistas\\Vistas\\frnConsumos.cs",
-              "ToolTip": "C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frnConsumos.cs*",
-              "RelativeToolTip": "Vistas\\Vistas\\frnConsumos.cs*",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAwwGUAAAA4AAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "frnGestionReservas.cs",
+              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frnGestionReservas.cs",
+              "RelativeDocumentMoniker": "Vistas\\Vistas\\frnGestionReservas.cs",
+              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frnGestionReservas.cs",
+              "RelativeToolTip": "Vistas\\Vistas\\frnGestionReservas.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAEwBsAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T04:18:01.844Z",
+              "WhenOpened": "2025-10-07T01:33:14.223Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "frnConsumos.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frnConsumos.cs",
-              "RelativeDocumentMoniker": "Vistas\\Vistas\\frnConsumos.cs",
-              "ToolTip": "C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frnConsumos.cs [Dise\u00F1o]*",
-              "RelativeToolTip": "Vistas\\Vistas\\frnConsumos.cs [Dise\u00F1o]*",
+              "DocumentIndex": 8,
+              "Title": "frnCheckIn.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frnCheckIn.cs",
+              "RelativeDocumentMoniker": "Vistas\\Vistas\\frnCheckIn.cs",
+              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frnCheckIn.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Vistas\\Vistas\\frnCheckIn.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T04:15:20.764Z",
+              "WhenOpened": "2025-10-09T16:29:04.319Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Consumo.cs",
-              "DocumentMoniker": "C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Metodos\\Entidades\\Consumo.cs",
-              "RelativeDocumentMoniker": "Metodos\\Entidades\\Consumo.cs",
-              "ToolTip": "C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Metodos\\Entidades\\Consumo.cs",
-              "RelativeToolTip": "Metodos\\Entidades\\Consumo.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAmwBYAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "frnConsumos.cs",
+              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frnConsumos.cs",
+              "RelativeDocumentMoniker": "Vistas\\Vistas\\frnConsumos.cs",
+              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frnConsumos.cs",
+              "RelativeToolTip": "Vistas\\Vistas\\frnConsumos.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAHcAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T04:12:17.879Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Cliente.cs",
-              "DocumentMoniker": "C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Metodos\\Entidades\\Cliente.cs",
-              "RelativeDocumentMoniker": "Metodos\\Entidades\\Cliente.cs",
-              "ToolTip": "C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Metodos\\Entidades\\Cliente.cs",
-              "RelativeToolTip": "Metodos\\Entidades\\Cliente.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAmwA4AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T02:57:46.061Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Program.cs",
-              "RelativeDocumentMoniker": "Vistas\\Program.cs",
-              "ToolTip": "C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Program.cs",
-              "RelativeToolTip": "Vistas\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T01:24:29.021Z"
+              "WhenOpened": "2025-10-09T17:42:18.525Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "frnCheckIn.cs",
+              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frnCheckIn.cs",
+              "RelativeDocumentMoniker": "Vistas\\Vistas\\frnCheckIn.cs",
+              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frnCheckIn.cs",
+              "RelativeToolTip": "Vistas\\Vistas\\frnCheckIn.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAYwA0AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T13:41:16.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "frnCheckOut.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frnCheckOut.cs",
+              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frnCheckOut.cs",
               "RelativeDocumentMoniker": "Vistas\\Vistas\\frnCheckOut.cs",
-              "ToolTip": "C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frnCheckOut.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frnCheckOut.cs [Dise\u00F1o]",
               "RelativeToolTip": "Vistas\\Vistas\\frnCheckOut.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-09T01:16:00.635Z",
@@ -252,48 +242,23 @@
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "Ingreso.cs",
-              "DocumentMoniker": "C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Metodos\\Entidades\\Ingreso.cs",
-              "RelativeDocumentMoniker": "Metodos\\Entidades\\Ingreso.cs",
-              "ToolTip": "C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Metodos\\Entidades\\Ingreso.cs",
-              "RelativeToolTip": "Metodos\\Entidades\\Ingreso.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Metodos\\Entidades\\Cliente.cs",
+              "RelativeDocumentMoniker": "Metodos\\Entidades\\Cliente.cs",
+              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Metodos\\Entidades\\Cliente.cs",
+              "RelativeToolTip": "Metodos\\Entidades\\Cliente.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBgAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T23:59:18.354Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Reserva.cs",
-              "DocumentMoniker": "C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Metodos\\Entidades\\Reserva.cs",
-              "RelativeDocumentMoniker": "Metodos\\Entidades\\Reserva.cs",
-              "ToolTip": "C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Metodos\\Entidades\\Reserva.cs",
-              "RelativeToolTip": "Metodos\\Entidades\\Reserva.cs",
-              "ViewState": "AgIAAJ4AAAAAAAAAAAAjwKEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T01:49:23.885Z",
+              "WhenOpened": "2025-10-07T02:57:46.061Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frnGestionReservas.cs",
-              "DocumentMoniker": "C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frnGestionReservas.cs",
-              "RelativeDocumentMoniker": "Vistas\\Vistas\\frnGestionReservas.cs",
-              "ToolTip": "C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frnGestionReservas.cs",
-              "RelativeToolTip": "Vistas\\Vistas\\frnGestionReservas.cs",
-              "ViewState": "AgIAAN4AAAAAAAAAAAAkwOEAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T01:33:14.223Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
               "Title": "frnGestionReservas.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frnGestionReservas.cs",
+              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frnGestionReservas.cs",
               "RelativeDocumentMoniker": "Vistas\\Vistas\\frnGestionReservas.cs",
-              "ToolTip": "C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frnGestionReservas.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frnGestionReservas.cs [Dise\u00F1o]",
               "RelativeToolTip": "Vistas\\Vistas\\frnGestionReservas.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-07T01:28:52.868Z",
@@ -301,26 +266,66 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Program.cs",
+              "RelativeDocumentMoniker": "Vistas\\Program.cs",
+              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Program.cs",
+              "RelativeToolTip": "Vistas\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T01:24:29.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Consumo.cs",
+              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Metodos\\Entidades\\Consumo.cs",
+              "RelativeDocumentMoniker": "Metodos\\Entidades\\Consumo.cs",
+              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Metodos\\Entidades\\Consumo.cs",
+              "RelativeToolTip": "Metodos\\Entidades\\Consumo.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAmwBYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T04:12:17.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Conexion.cs",
+              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Metodos\\Conexion\\Conexion.cs",
+              "RelativeDocumentMoniker": "Metodos\\Conexion\\Conexion.cs",
+              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Metodos\\Conexion\\Conexion.cs",
+              "RelativeToolTip": "Metodos\\Conexion\\Conexion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T04:36:04.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Reserva.cs",
+              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Metodos\\Entidades\\Reserva.cs",
+              "RelativeDocumentMoniker": "Metodos\\Entidades\\Reserva.cs",
+              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Metodos\\Entidades\\Reserva.cs",
+              "RelativeToolTip": "Metodos\\Entidades\\Reserva.cs",
+              "ViewState": "AgIAAJ4AAAAAAAAAAAAjwKEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T01:49:23.885Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "frmDashboard.cs",
-              "DocumentMoniker": "C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frmDashboard.cs",
+              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frmDashboard.cs",
               "RelativeDocumentMoniker": "Vistas\\Vistas\\frmDashboard.cs",
-              "ToolTip": "C:\\Users\\jrlop\\OneDrive\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frmDashboard.cs",
+              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\Proyecto-en-duos\\Gestion para un hotel\\Vistas\\Vistas\\frmDashboard.cs",
               "RelativeToolTip": "Vistas\\Vistas\\frmDashboard.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAAADIAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-07T01:27:41.564Z",
               "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 468,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }

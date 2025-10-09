@@ -43,32 +43,33 @@ namespace Metodos.Entidades
             }
         }
 
-        public static DataTable BuscarReservasCheckIn(string termino)
+        public static DataTable MostrarReservasCheckIN()
         {
             try
             {
                 SqlConnection con = Conexion.Conexion.conectar();
 
-                string sql = $"select *from ReservaId WHERE DUI LIKE '%{termino}%' and nombreEstadoRe = 'En espera'";
+                string sql = "select *from ReservaId WHERE nombreEstadoRe = 'En espera'";
                 SqlDataAdapter da = new SqlDataAdapter(sql, con);
                 DataTable tabla = new DataTable();
                 da.Fill(tabla);
+
                 return tabla;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al buscar reservas: " + ex.Message);
+                MessageBox.Show("Error al mostrar reservas: " + ex.Message);
                 return null;
             }
         }
 
-        public static DataTable BuscarReservasCheckOut(string termino)
+        public static DataTable MostrarReservasCheckOut()
         {
             try
             {
                 SqlConnection con = Conexion.Conexion.conectar();
 
-                string sql = $"select *from ReservaId WHERE DUI LIKE '%{termino}%' and nombreEstadoRe = 'En estancia'";
+                string sql = "select *from ReservaId WHERE nombreEstadoRe = 'En estancia'";
                 SqlDataAdapter da = new SqlDataAdapter(sql, con);
                 DataTable tabla = new DataTable();
                 da.Fill(tabla);

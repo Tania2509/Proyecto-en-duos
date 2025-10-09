@@ -21,7 +21,7 @@ namespace Vistas.Vistas
         public void CargarIngresos()
         {
             dgvIngresos.DataSource = null;
-            dgvIngresos.DataSource = Reserva.CargarReservas();
+            dgvIngresos.DataSource = Ingreso.CargarIngresos();
         }
 
         private void frnIngresos_Load(object sender, EventArgs e)

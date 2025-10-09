@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,13 +14,15 @@ namespace Vistas.Vistas
 {
     public partial class frnGestionReservas : UserControl
     {
+        
         public frnGestionReservas()
         {
             InitializeComponent();
+            CheckIn = new frnCheckIn(this); 
         }
 
-        
 
+        private frnCheckIn CheckIn;
         public void CargarReserva()
         {
             dgvReservas.DataSource = null;
@@ -89,7 +92,7 @@ namespace Vistas.Vistas
         #endregion
 
         private void btnAgregar_Click(object sender, EventArgs e)
-        {
+        { 
             try
             {
                 // Validaciones de campos vacíos
@@ -121,7 +124,7 @@ namespace Vistas.Vistas
                     return;
                 }
 
-                // ✅ NUEVA VALIDACIÓN: Verificar capacidad de la habitación
+                    //Verificar capacidad de la habitación
                 int idHabitacion = Convert.ToInt32(cbHabitacion.SelectedValue);
                 int capacidadHabitacion = Reserva.CapacidadHabitacion(idHabitacion);
 
@@ -147,7 +150,9 @@ namespace Vistas.Vistas
 
                 // Insertar la reserva
                 reserva.InsertarReserva();
+                CheckIn.MostrarEspera(); // Actualizar la vista de Check-In
                 CargarReserva(); // Método para recargar la lista de reservas
+
                 MessageBox.Show("Se registró correctamente la reserva", "Registro exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
@@ -225,14 +230,14 @@ namespace Vistas.Vistas
             if (dgvReservas.CurrentRow != null)
             {
 
-                txtCantidad.Text = dgvReservas.CurrentRow.Cells["Cantidad"].Value.ToString();
-                dtpEntrada.Value = Convert.ToDateTime(dgvReservas.CurrentRow.Cells["Fecha dentrada"].Value);
+                txtCantidad.Text = dgvReservas.CurrentRow.Cells["Cantidad de personas"].Value.ToString();
+                dtpEntrada.Value = Convert.ToDateTime(dgvReservas.CurrentRow.Cells["Fecha de entrada"].Value);
                 dtpSalida.Value = Convert.ToDateTime(dgvReservas.CurrentRow.Cells["Fecha de salida"].Value);
 
-                cbPago.SelectedValue = dgvReservas.CurrentRow.Cells["Pago"].Value;
-                cbHabitacion.SelectedValue = dgvReservas.CurrentRow.Cells["Número de habitación"].Value;
-                cbCliente.SelectedValue = dgvReservas.CurrentRow.Cells["Nombre del Cliente"].Value;
-                cbDui.SelectedValue = dgvReservas.CurrentRow.Cells["DUI del cliente"].Value;
+                cbCliente.Text = dgvReservas.CurrentRow.Cells["Nombre del Cliente"].Value.ToString();
+                cbHabitacion.Text = dgvReservas.CurrentRow.Cells["Número de habitación"].Value.ToString();
+                cbPago.Text = dgvReservas.CurrentRow.Cells["Pago"].Value.ToString();
+                cbDui.Text = dgvReservas.CurrentRow.Cells["DUI del cliente"].Value.ToString();
             }
         }
     }

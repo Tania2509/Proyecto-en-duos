@@ -28,8 +28,6 @@ nombreEstado varchar(30)
 );
 go
 
-
-
 create table Habitacion (
 idHabitaciones int primary key identity (1,1),
 numeroHabitacion varchar(5),
@@ -120,9 +118,9 @@ select *from EstadoHabitación
 select *from Usuario
 select *from Rol
 
-select *from ReservaId WHERE DUI LIKE '%1%' and nombreEstadoRe = 'En estancia'
 
-INSERT INTO Cliente VALUES ('Juan Carlos', 'García López', '12345678', '1990-05-15', '77778888', 'juan.garcia@email.com'),
+
+/* INSERT INTO Cliente VALUES ('Juan Carlos', 'García López', '12345678', '1990-05-15', '77778888', 'juan.garcia@email.com'),
 ('María Elena', 'Rodríguez Sánchez', '87654321', '1985-08-22', '76665555', 'maria.rodriguez@email.com'),
 ('Carlos Antonio', 'Hernández Castro', '11223344', '1992-12-03', '74443333', 'carlos.hernandez@email.com');
 go
@@ -131,21 +129,12 @@ INSERT INTO Servicio (nombreServicio, precio, descripcion) VALUES
 ('Lavandería', 15.50, 'Servicio de lavado y planchado de ropa'),
 ('Desayuno Buffet', 25.00, 'Buffet de desayuno continental e internacional'),
 ('Spa y Masajes', 75.00, 'Servicio de spa con masajes relajantes y terapéuticos');
+*/
 
-create view ReservaId as
-SELECT idReserva, nombreCli + ' ' + apellidoCli AS Cliente,
-                              numeroHabitacion AS Habitacion, duiCli as DUI, fechaEntrada as [Fecha de Entrada], fechaSalida as [Fecha de Salida], 
-                              nombreEstadoRe
-                              FROM Reserva R
-                              INNER JOIN Cliente C ON R.id_Cliente = C.idCliente
-                              INNER JOIN Habitacion H ON R.id_Habitacion = H.idHabitaciones
-                              INNER JOIN EstadoReserva E ON R.id_Estado = E.idEstadoRe
-
-
-INSERT INTO Habitacion VALUES (75.00, 2,'101'),
-( 120.00, 4, '102'),
-(200.00, 6,'201');
-
+INSERT INTO Habitacion VALUES ('101', 24, 5, 1),
+('106', 21, 2, 1),
+('100', 14, 1, 1)
+go
 
 insert into Rol values ('Administrador'),
 ('Recepcionista'),
@@ -166,7 +155,6 @@ insert into EstadoHabitación values ('Vacia'),
 ('Ocupada')
 go
 
-
 create view Reservaciones as
 select idReserva as Reserva, nombreEstadoRe as Estado, nombreCli as [Nombre del Cliente], duiCli as [DUI del cliente], numeroHabitacion as [Número de habitación], cantidadReserva as [Cantidad de personas], nombreMetodo as Pago, fechaEntrada as [Fecha de entrada], fechaSalida as [Fecha de salida]  from Reserva R
 inner join
@@ -177,3 +165,22 @@ INNER JOIN
 Habitacion H ON H.idHabitaciones=R.id_Habitacion
 INNER JOIN
 Cliente C ON C.idCliente=R.id_Cliente
+go
+
+create view Clientes as
+SELECT idCliente as Cliente, nombreCli as [Nombre del cliente], apellidoCli as [Apellido del cliente], duiCli as [DUI], nombreEstadoRe as [Estado] FROM Cliente C
+inner join
+Reserva R on R.id_Cliente= C.idCliente
+INNER JOIN
+EstadoReserva ER on ER.idEstadoRe = r.id_Estado
+go
+
+create view ReservaId as
+SELECT idReserva, nombreCli + ' ' + apellidoCli AS Cliente,
+numeroHabitacion AS Habitacion, duiCli as DUI, fechaEntrada as [Fecha de Entrada], fechaSalida as [Fecha de Salida], 
+nombreEstadoRe
+FROM Reserva R
+INNER JOIN Cliente C ON R.id_Cliente = C.idCliente
+INNER JOIN Habitacion H ON R.id_Habitacion = H.idHabitaciones
+INNER JOIN EstadoReserva E ON R.id_Estado = E.idEstadoRe
+go

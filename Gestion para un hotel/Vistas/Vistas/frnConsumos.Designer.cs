@@ -29,10 +29,8 @@
         private void InitializeComponent()
         {
             this.dgvConsumos = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
             this.cbServicios = new System.Windows.Forms.ComboBox();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.txtDUI = new System.Windows.Forms.TextBox();
             this.dgvClientes = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsumos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
@@ -40,86 +38,76 @@
             // 
             // dgvConsumos
             // 
+            this.dgvConsumos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvConsumos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvConsumos.Location = new System.Drawing.Point(127, 319);
+            this.dgvConsumos.Location = new System.Drawing.Point(81, 331);
+            this.dgvConsumos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvConsumos.Name = "dgvConsumos";
             this.dgvConsumos.RowHeadersWidth = 51;
             this.dgvConsumos.RowTemplate.Height = 24;
-            this.dgvConsumos.Size = new System.Drawing.Size(624, 215);
+            this.dgvConsumos.Size = new System.Drawing.Size(532, 196);
             this.dgvConsumos.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(152, 113);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 16);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "DUI del cliente";
             // 
             // cbServicios
             // 
+            this.cbServicios.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cbServicios.FormattingEnabled = true;
-            this.cbServicios.Location = new System.Drawing.Point(860, 249);
+            this.cbServicios.Location = new System.Drawing.Point(693, 207);
+            this.cbServicios.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbServicios.Name = "cbServicios";
-            this.cbServicios.Size = new System.Drawing.Size(121, 24);
+            this.cbServicios.Size = new System.Drawing.Size(92, 21);
             this.cbServicios.TabIndex = 2;
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(893, 476);
+            this.btnAgregar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAgregar.Location = new System.Drawing.Point(693, 480);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(119, 58);
+            this.btnAgregar.Size = new System.Drawing.Size(137, 47);
             this.btnAgregar.TabIndex = 3;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // txtDUI
-            // 
-            this.txtDUI.Location = new System.Drawing.Point(261, 110);
-            this.txtDUI.Name = "txtDUI";
-            this.txtDUI.Size = new System.Drawing.Size(100, 22);
-            this.txtDUI.TabIndex = 4;
-            // 
             // dgvClientes
             // 
+            this.dgvClientes.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvClientes.Location = new System.Drawing.Point(127, 232);
+            this.dgvClientes.Location = new System.Drawing.Point(81, 193);
+            this.dgvClientes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvClientes.Name = "dgvClientes";
             this.dgvClientes.RowHeadersWidth = 51;
             this.dgvClientes.RowTemplate.Height = 24;
-            this.dgvClientes.Size = new System.Drawing.Size(292, 81);
+            this.dgvClientes.Size = new System.Drawing.Size(325, 100);
             this.dgvClientes.TabIndex = 5;
             this.dgvClientes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvClientes_CellClick_1);
             // 
             // frnConsumos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dgvClientes);
-            this.Controls.Add(this.txtDUI);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.cbServicios);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvConsumos);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frnConsumos";
-            this.Size = new System.Drawing.Size(1291, 560);
+            this.Size = new System.Drawing.Size(1016, 563);
             this.Load += new System.EventHandler(this.frnConsumos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsumos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.DataGridView dgvConsumos;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbServicios;
         private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.TextBox txtDUI;
         private System.Windows.Forms.DataGridView dgvClientes;
     }
 }
