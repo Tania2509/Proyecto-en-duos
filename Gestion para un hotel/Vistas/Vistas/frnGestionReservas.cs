@@ -18,11 +18,12 @@ namespace Vistas.Vistas
             InitializeComponent();
         }
 
+        
+
         public void CargarReserva()
         {
             dgvReservas.DataSource = null;
             dgvReservas.DataSource = Reserva.CargarReservas();
-
         }
 
 
@@ -120,6 +121,21 @@ namespace Vistas.Vistas
                     return;
                 }
 
+                // ✅ NUEVA VALIDACIÓN: Verificar capacidad de la habitación
+                int idHabitacion = Convert.ToInt32(cbHabitacion.SelectedValue);
+                int capacidadHabitacion = Reserva.CapacidadHabitacion(idHabitacion);
+
+                if (cantidad > capacidadHabitacion)
+                {
+                    MessageBox.Show($"La habitación seleccionada tiene capacidad para {capacidadHabitacion} persona(s). " +
+                                   $"No puede alojar {cantidad} persona(s).",
+                                   "Capacidad excedida",
+                                   MessageBoxButtons.OK,
+                                   MessageBoxIcon.Warning);
+                    txtCantidad.Focus();
+                    return;
+                }
+
                 // Crear objeto Reserva y asignar valores
                 Reserva reserva = new Reserva();
                 reserva.Cantidad = cantidad;
@@ -144,11 +160,44 @@ namespace Vistas.Vistas
         {
             CargarComboboxReserva();
             SincronizarComboboxClientes();
+            CargarReserva();
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
+            if (dgvReservas.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Selecciona una reserva para actualizar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
+            // Obtener el idReserva de la fila seleccionada
+            int idReserva = Convert.ToInt32(dgvReservas.SelectedRows[0].Cells["idReserva"].Value);
+
+            // Crear instancia y asignar propiedades desde los controles
+            Reserva reserva = new Reserva
+            {
+                IdReserva = idReserva,
+                Cantidad = int.TryParse(txtCantidad.Text, out int cantidad) ? cantidad : 0,
+                FechaEntrada = dtpEntrada.Value,
+                FechaSalida = dtpSalida.Value,
+                IdPago = Convert.ToInt32(cbPago.SelectedValue),
+                IdHabitacion = Convert.ToInt32(cbHabitacion.SelectedValue),
+                IdCliente = Convert.ToInt32(cbCliente.SelectedValue)
+            };
+
+            // Llamar al método de actualización
+            bool actualizado = reserva.ActualizarReserva();
+
+            if (actualizado)
+            {
+                MessageBox.Show("Reserva actualizada correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                CargarReserva(); // Refresca la lista de reservas
+            }
+            else
+            {
+                MessageBox.Show("No se pudo actualizar la reserva.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -160,7 +209,7 @@ namespace Vistas.Vistas
             if (respueta == DialogResult.Yes)
             {
                 if (reservaEliminar.eliminarReserva(id) == true)
-                {
+                { 
                     MessageBox.Show("Se elimino correctamente el registro", "Registro eliminado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     CargarReserva();
                 }
@@ -168,6 +217,22 @@ namespace Vistas.Vistas
                 {
                     MessageBox.Show("No se pudo eliminar el registro", "Error al eliminar", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+            }
+        }
+
+        private void dgvReservas_DoubleClick(object sender, EventArgs e)
+        {
+            if (dgvReservas.CurrentRow != null)
+            {
+
+                txtCantidad.Text = dgvReservas.CurrentRow.Cells["Cantidad"].Value.ToString();
+                dtpEntrada.Value = Convert.ToDateTime(dgvReservas.CurrentRow.Cells["Fecha dentrada"].Value);
+                dtpSalida.Value = Convert.ToDateTime(dgvReservas.CurrentRow.Cells["Fecha de salida"].Value);
+
+                cbPago.SelectedValue = dgvReservas.CurrentRow.Cells["Pago"].Value;
+                cbHabitacion.SelectedValue = dgvReservas.CurrentRow.Cells["Número de habitación"].Value;
+                cbCliente.SelectedValue = dgvReservas.CurrentRow.Cells["Nombre del Cliente"].Value;
+                cbDui.SelectedValue = dgvReservas.CurrentRow.Cells["DUI del cliente"].Value;
             }
         }
     }

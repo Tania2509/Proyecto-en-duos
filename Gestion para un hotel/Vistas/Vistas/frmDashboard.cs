@@ -17,31 +17,47 @@ namespace Vistas.Vistas
             InitializeComponent();
         }
 
-        #region
+        frnGestionReservas GestionReservas = new frnGestionReservas();
+        frnConsumos Consumos = new frnConsumos();
+        frnIngresos Ingresos = new frnIngresos();
+        frnCheckIn CheckIn;
+        frnCheckOut CheckOut;
 
-        private Form activarForm = null;
-        //Creando el metodo que me va permitir activar los formularios
 
-        private void AbrirForm(Form formularioPintar)
+        private void lblCheckIn_Click(object sender, EventArgs e)
         {
-            if (activarForm != null)
-            {
-                //esto detecta si hay un formulario abierto
-                activarForm.Close();
-            }
-
-            activarForm = formularioPintar;
-            formularioPintar.TopLevel = false;
-
-            formularioPintar.FormBorderStyle = FormBorderStyle.None;
-            formularioPintar.Dock = DockStyle.Fill;
-
-            pnlPrincipal.Controls.Add(formularioPintar);
-            formularioPintar.BringToFront();
-            formularioPintar.Show();
+            pnlPrincipal.Controls.Clear();
+            pnlPrincipal.Controls.Add(CheckIn);
         }
 
-        #endregion
+        private void lblCheckOut_Click(object sender, EventArgs e)
+        {
+            pnlPrincipal.Controls.Clear();
+            pnlPrincipal.Controls.Add(CheckOut);
+        }
 
+        private void lblGestionReserva_Click(object sender, EventArgs e)
+        {
+            pnlPrincipal.Controls.Clear();
+            pnlPrincipal.Controls.Add(GestionReservas);
+        }
+
+        private void frmDashboard_Load_1(object sender, EventArgs e)
+        {
+            CheckIn = new frnCheckIn(GestionReservas);
+            CheckOut = new frnCheckOut(GestionReservas);
+        }
+
+        private void lblConsumos_Click(object sender, EventArgs e)
+        {
+            pnlPrincipal.Controls.Clear();
+            pnlPrincipal.Controls.Add(Consumos);
+        }
+
+        private void lblIngresos_Click(object sender, EventArgs e)
+        {
+            pnlPrincipal.Controls.Clear();
+            pnlPrincipal.Controls.Add(Ingresos);
+        }
     }
 }

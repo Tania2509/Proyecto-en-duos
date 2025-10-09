@@ -28,11 +28,15 @@ nombreEstado varchar(30)
 );
 go
 
+
+
 create table Habitacion (
 idHabitaciones int primary key identity (1,1),
 numeroHabitacion varchar(5),
 precio decimal (10,2),
 cantidad int,
+estadoHabitacion int,
+foreign key (estadoHabitacion) references EstadoHabitación (idEstado)
 );
 go
 
@@ -85,7 +89,7 @@ go
 
 create table Consumo (
 idConsumo int primary key identity (1,1),
-fecha date, 
+fecha date,
 id_Reserva int, 
 id_Servicio int,
 foreign key (id_Reserva) references Reserva (idReserva),
@@ -116,9 +120,26 @@ select *from EstadoHabitación
 select *from Usuario
 select *from Rol
 
+select *from ReservaId WHERE DUI LIKE '%1%' and nombreEstadoRe = 'En estancia'
+
 INSERT INTO Cliente VALUES ('Juan Carlos', 'García López', '12345678', '1990-05-15', '77778888', 'juan.garcia@email.com'),
 ('María Elena', 'Rodríguez Sánchez', '87654321', '1985-08-22', '76665555', 'maria.rodriguez@email.com'),
 ('Carlos Antonio', 'Hernández Castro', '11223344', '1992-12-03', '74443333', 'carlos.hernandez@email.com');
+go
+
+INSERT INTO Servicio (nombreServicio, precio, descripcion) VALUES
+('Lavandería', 15.50, 'Servicio de lavado y planchado de ropa'),
+('Desayuno Buffet', 25.00, 'Buffet de desayuno continental e internacional'),
+('Spa y Masajes', 75.00, 'Servicio de spa con masajes relajantes y terapéuticos');
+
+create view ReservaId as
+SELECT idReserva, nombreCli + ' ' + apellidoCli AS Cliente,
+                              numeroHabitacion AS Habitacion, duiCli as DUI, fechaEntrada as [Fecha de Entrada], fechaSalida as [Fecha de Salida], 
+                              nombreEstadoRe
+                              FROM Reserva R
+                              INNER JOIN Cliente C ON R.id_Cliente = C.idCliente
+                              INNER JOIN Habitacion H ON R.id_Habitacion = H.idHabitaciones
+                              INNER JOIN EstadoReserva E ON R.id_Estado = E.idEstadoRe
 
 
 INSERT INTO Habitacion VALUES (75.00, 2,'101'),

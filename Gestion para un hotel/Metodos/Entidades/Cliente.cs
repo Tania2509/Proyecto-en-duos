@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Metodos.Entidades
 {
@@ -20,5 +21,24 @@ namespace Metodos.Entidades
             add.Fill(tablaCarga);
             return tablaCarga;
         }
+
+        public static DataTable MostrarClientes()
+        {
+            try
+            {
+                SqlConnection conexion = Conexion.Conexion.conectar();
+                string cadena = "select *from Reservaciones;";
+                SqlDataAdapter data = new SqlDataAdapter(cadena, conexion);
+                DataTable tablavirtual = new DataTable();
+                data.Fill(tablavirtual);
+                return tablavirtual;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar datos" + ex);
+                return null;
+            }
+        }
+
     }
 }

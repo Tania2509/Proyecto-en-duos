@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -11,126 +12,184 @@ namespace Metodos.Entidades
     public class CheckInOut
     {
 
-        public bool RealizarCheckIn(string duiCliente)
+        #region buscar reservas
+
+        public static int ObtenerReservaPorIdCliente(int idCliente)
         {
             try
             {
                 SqlConnection con = Conexion.Conexion.conectar();
 
-                // 1. Buscar reserva activa del cliente
-                string buscar = @"SELECT TOP 1 R.idReserva, R.id_Habitacion 
-                          FROM Reserva R
-                          INNER JOIN Cliente C ON R.id_Cliente = C.idCliente
-                          WHERE C.dui = @dui AND R.id_Estado = 1"; // 1 = En espera
+                string sql = @"SELECT TOP 1 R.idReserva
+                       FROM Reserva R
+                       INNER JOIN Cliente C ON R.id_Cliente = C.idCliente
+                       WHERE C.idCliente = @idCliente AND R.id_Estado = 2";
+                // 2 = En estancia (Check-In activo)
 
-                SqlCommand cmdBuscar = new SqlCommand(buscar, con);
-                cmdBuscar.Parameters.AddWithValue("@dui", duiCliente);
+                SqlCommand cmd = new SqlCommand(sql, con);
+                cmd.Parameters.AddWithValue("@idCliente", idCliente);
 
-                SqlDataReader dr = cmdBuscar.ExecuteReader();
-                if (!dr.Read())
-                {
-                    MessageBox.Show("No hay reservas pendientes para este cliente.");
-                    return false;
-                }
+                object resultado = cmd.ExecuteScalar();
 
-                int idReserva = Convert.ToInt32(dr["idReserva"]);
-                int idHabitacion = Convert.ToInt32(dr["id_Habitacion"]);
-                dr.Close();
-
-                // 2. Actualizar reserva y habitación
-                string actualizarReserva = "UPDATE Reserva SET id_Estado = 2 WHERE idReserva = @idReserva"; // 2 = En estancia
-                string actualizarHabitacion = "UPDATE Habitacion SET estado = 'Ocupada' WHERE idHabitacion = @idHabitacion";
-                SqlCommand cmdHab = new SqlCommand(actualizarHabitacion, con);
-                SqlCommand cmdReserva = new SqlCommand(actualizarReserva, con);
-                cmdReserva.Parameters.AddWithValue("@idReserva", idReserva);
-                cmdHab.Parameters.AddWithValue("@idHabitacion", idHabitacion);
-                cmdReserva.ExecuteNonQuery();
-
-                MessageBox.Show("Check-In realizado correctamente.");
-                return true;
+                if (resultado != null)
+                    return Convert.ToInt32(resultado);
+                else
+                    return 0; // No hay reserva activa
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al realizar Check-In: " + ex.Message);
-                return false;
+                MessageBox.Show("Error al obtener la reserva: " + ex.Message);
+                return 0;
             }
         }
-        
-        public bool RealizarCheckOut(string duiCliente)
+
+        public static DataTable BuscarReservasCheckIn(string termino)
         {
             try
             {
                 SqlConnection con = Conexion.Conexion.conectar();
 
-                // 1. Buscar reserva en estancia
-                string buscar = @"SELECT TOP 1 R.idReserva, R.id_Habitacion, H.precio 
-                          FROM Reserva R
-                          INNER JOIN Habitacion H ON R.id_Habitacion = H.idHabitacion
-                          INNER JOIN Cliente C ON R.id_Cliente = C.idCliente
-                          WHERE C.dui = @dui AND R.id_Estado = 2"; // 2 = En estancia
+                string sql = $"select *from ReservaId WHERE DUI LIKE '%{termino}%' and nombreEstadoRe = 'En espera'";
+                SqlDataAdapter da = new SqlDataAdapter(sql, con);
+                DataTable tabla = new DataTable();
+                da.Fill(tabla);
+                return tabla;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al buscar reservas: " + ex.Message);
+                return null;
+            }
+        }
+
+        public static DataTable BuscarReservasCheckOut(string termino)
+        {
+            try
+            {
+                SqlConnection con = Conexion.Conexion.conectar();
+
+                string sql = $"select *from ReservaId WHERE DUI LIKE '%{termino}%' and nombreEstadoRe = 'En estancia'";
+                SqlDataAdapter da = new SqlDataAdapter(sql, con);
+                DataTable tabla = new DataTable();
+                da.Fill(tabla);
+                return tabla;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al buscar reservas: " + ex.Message);
+                return null;
+            }
+        }
+
+        #endregion
+
+        public static int ObtenerReserva(string duiCliente)
+        {
+            try
+            {
+                SqlConnection con = Conexion.Conexion.conectar();
+
+                string sql = @"SELECT TOP 1 R.idReserva
+                       FROM Reserva R
+                       INNER JOIN Cliente C ON R.id_Cliente = C.idCliente
+                       WHERE C.dui = @dui AND R.id_Estado = 2";
+                // 2 = En estancia (Check-In activo)
+
+                SqlCommand cmd = new SqlCommand(sql, con);
+                cmd.Parameters.AddWithValue("@dui", duiCliente);
+
+                object resultado = cmd.ExecuteScalar();
+
+                if (resultado != null)
+                    return Convert.ToInt32(resultado);
+                else
+                    return 0; // No hay reserva activa
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al obtener la reserva: " + ex.Message);
+                return 0;
+            }
+        }
+
+        public static bool RealizarCheckInPorId(int idReserva)
+        {
+            try
+            {
+                SqlConnection con = Conexion.Conexion.conectar();
+
+                // 1️⃣ Obtener habitación asociada a la reserva
+                string buscar = @"SELECT id_Habitacion 
+                          FROM Reserva 
+                          WHERE idReserva = @idReserva";
 
                 SqlCommand cmdBuscar = new SqlCommand(buscar, con);
-                cmdBuscar.Parameters.AddWithValue("@dui", duiCliente);
+                cmdBuscar.Parameters.AddWithValue("@idReserva", idReserva);
 
-                SqlDataReader leer = cmdBuscar.ExecuteReader();
-                if (!leer.Read())
+                object resultado = cmdBuscar.ExecuteScalar();
+
+                if (resultado == null)
                 {
-                    MessageBox.Show("No hay check-in activo para este cliente.");
+                    MessageBox.Show("No se encontró la reserva indicada.");
                     return false;
                 }
 
-                int idReserva = Convert.ToInt32(leer["idReserva"]);
-                int idHabitacion = Convert.ToInt32(leer["id_Habitacion"]);
-                decimal precioHab = Convert.ToDecimal(leer["precio"]);
-                leer.Close();
+                int idHabitacion = Convert.ToInt32(resultado);
 
-                // 2. Calcular total habitación 
-                decimal totalHabitacion = precioHab;
-                decimal totalServicios = CalcularTotalServicios(idReserva);
-                decimal totalGeneral = totalHabitacion + totalServicios;
+                // 2️⃣ Cambiar el estado de la reserva a 'En estancia'
+                string updateReserva = "UPDATE Reserva SET id_Estado = 2 WHERE idReserva = @idReserva";
+                SqlCommand cmdUpdate = new SqlCommand(updateReserva, con);
+                cmdUpdate.Parameters.AddWithValue("@idReserva", idReserva);
+                cmdUpdate.ExecuteNonQuery();
 
-                // 3. Registrar ingreso
-                string ingreso = @"INSERT INTO Ingresos (idReserva, totalHabitacion, totalServicios, totalGeneral, fecha)
-                           VALUES (@idReserva, @totalHab, @totalServ, @totalGen, GETDATE())";
-                SqlCommand cmdIngreso = new SqlCommand(ingreso, con);
-                cmdIngreso.Parameters.AddWithValue("@idReserva", idReserva);
-                cmdIngreso.Parameters.AddWithValue("@totalHab", totalHabitacion);
-                cmdIngreso.Parameters.AddWithValue("@totalServ", totalServicios);
-                cmdIngreso.Parameters.AddWithValue("@totalGen", totalGeneral);
-                cmdIngreso.ExecuteNonQuery();
-
-                // 4. Actualizar estados
-                string actualizarReserva = "UPDATE Reserva SET id_Estado = 3 WHERE idReserva = @idReserva"; // 3 = Completada
-                SqlCommand cmdReserva = new SqlCommand(actualizarReserva, con);
-                cmdReserva.Parameters.AddWithValue("@idReserva", idReserva);
-                cmdReserva.ExecuteNonQuery();
-
-                string actualizarHabitacion = "UPDATE Habitacion SET estado = 'Disponible' WHERE idHabitacion = @idHabitacion";
-                SqlCommand cmdHab = new SqlCommand(actualizarHabitacion, con);
+                // 3️⃣ Cambiar el estado de la habitación a 'Ocupada'
+                string updateHabitacion = "UPDATE Habitacion SET estadoHabitacion = 2 WHERE idHabitaciones = @idHabitacion";
+                SqlCommand cmdHab = new SqlCommand(updateHabitacion, con);
                 cmdHab.Parameters.AddWithValue("@idHabitacion", idHabitacion);
                 cmdHab.ExecuteNonQuery();
 
-                MessageBox.Show($"Check-Out realizado. Total: ${totalGeneral}");
                 return true;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al realizar Check-Out: " + ex.Message);
+                MessageBox.Show("Error al realizar Check-In: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
         }
 
-        // Método auxiliar (puedes ajustarlo)
-        private decimal CalcularTotalServicios(int idReserva)
+        public static bool RealizarCheckOut(int idReserva)
         {
-            SqlConnection con = Conexion.Conexion.conectar();
-            string sql = @"SELECT ISNULL(SUM(S.precio), 0) 
-                   FROM ServiciosConsumidos SC 
-                   INNER JOIN Servicio S ON SC.id_Servicio = S.idServicio 
-                   WHERE SC.id_Reserva = @idReserva";
-            SqlCommand cmd = new SqlCommand(sql, con);
-            cmd.Parameters.AddWithValue("@idReserva", idReserva);
-            return Convert.ToDecimal(cmd.ExecuteScalar());
+            try
+            {
+                SqlConnection con = Conexion.Conexion.conectar();
+
+                // Obtener habitación asociada
+                string buscar = @"SELECT id_Habitacion FROM Reserva WHERE idReserva = @idReserva";
+                SqlCommand cmdBuscar = new SqlCommand(buscar, con);
+                cmdBuscar.Parameters.AddWithValue("@idReserva", idReserva);
+                int idHabitacion = Convert.ToInt32(cmdBuscar.ExecuteScalar());
+
+                // Cambiar estados
+                string updateReserva = "UPDATE Reserva SET id_Estado = 3 WHERE idReserva = @idReserva"; 
+                SqlCommand cmdUpdate = new SqlCommand(updateReserva, con);
+                cmdUpdate.Parameters.AddWithValue("@idReserva", idReserva);
+                cmdUpdate.ExecuteNonQuery();
+
+                string updateHabitacion = "UPDATE Habitacion SET estadoHabitacion = 1 WHERE idHabitaciones = @idHabitacion";
+                SqlCommand cmdHab = new SqlCommand(updateHabitacion, con);
+                cmdHab.Parameters.AddWithValue("@idHabitacion", idHabitacion);
+                cmdHab.ExecuteNonQuery();
+
+                // Registrar ingreso
+                Ingreso.RegistrarIngreso(idReserva);
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error en Check-Out: " + ex.Message);
+                return false;
+            }
         }
     }
 }

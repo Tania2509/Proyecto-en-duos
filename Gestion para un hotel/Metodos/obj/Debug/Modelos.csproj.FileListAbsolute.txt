@@ -1,0 +1,6 @@
+C:\Users\jrlop\OneDrive\Desktop\Proyecto-en-duos\Gestion para un hotel\Metodos\obj\Debug\Modelos.csproj.AssemblyReference.cache
+C:\Users\jrlop\OneDrive\Desktop\Proyecto-en-duos\Gestion para un hotel\Metodos\obj\Debug\Modelos.csproj.CoreCompileInputs.cache
+C:\Users\jrlop\OneDrive\Desktop\Proyecto-en-duos\Gestion para un hotel\Metodos\bin\Debug\Metodos.dll
+C:\Users\jrlop\OneDrive\Desktop\Proyecto-en-duos\Gestion para un hotel\Metodos\bin\Debug\Metodos.pdb
+C:\Users\jrlop\OneDrive\Desktop\Proyecto-en-duos\Gestion para un hotel\Metodos\obj\Debug\Metodos.dll
+C:\Users\jrlop\OneDrive\Desktop\Proyecto-en-duos\Gestion para un hotel\Metodos\obj\Debug\Metodos.pdb

@@ -231,6 +231,7 @@
             this.dgvReservas.RowTemplate.Height = 24;
             this.dgvReservas.Size = new System.Drawing.Size(499, 551);
             this.dgvReservas.TabIndex = 1;
+            this.dgvReservas.DoubleClick += new System.EventHandler(this.dgvReservas_DoubleClick);
             // 
             // frnGestionReservas
             // 

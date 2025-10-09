@@ -54,11 +54,35 @@
     <Compile Include="Vistas\frmDashboard.Designer.cs">
       <DependentUpon>frmDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\frnCheckIn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vistas\frnCheckIn.Designer.cs">
+      <DependentUpon>frnCheckIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\frnCheckOut.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vistas\frnCheckOut.Designer.cs">
+      <DependentUpon>frnCheckOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\frnConsumos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vistas\frnConsumos.Designer.cs">
+      <DependentUpon>frnConsumos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\frnGestionReservas.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Vistas\frnGestionReservas.Designer.cs">
       <DependentUpon>frnGestionReservas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\frnIngresos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vistas\frnIngresos.Designer.cs">
+      <DependentUpon>frnIngresos.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -73,8 +97,20 @@
     <EmbeddedResource Include="Vistas\frmDashboard.resx">
       <DependentUpon>frmDashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\frnCheckIn.resx">
+      <DependentUpon>frnCheckIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\frnCheckOut.resx">
+      <DependentUpon>frnCheckOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\frnConsumos.resx">
+      <DependentUpon>frnConsumos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\frnGestionReservas.resx">
       <DependentUpon>frnGestionReservas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\frnIngresos.resx">
+      <DependentUpon>frnIngresos.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

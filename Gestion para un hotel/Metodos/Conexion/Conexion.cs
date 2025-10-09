@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Metodos.Conexion
 {
-    internal class Conexion
+    public class Conexion
     {
         private static string servidor = "ODIE\\SQLEXPRESS01";
         private static string database = "Hotel";

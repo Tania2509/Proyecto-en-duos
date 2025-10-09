@@ -32,10 +32,10 @@
             this.lblIngresos = new System.Windows.Forms.Label();
             this.lblCheckOut = new System.Windows.Forms.Label();
             this.lblCheckIn = new System.Windows.Forms.Label();
-            this.lblVerReserva = new System.Windows.Forms.Label();
             this.lblGestionReserva = new System.Windows.Forms.Label();
             this.pbUsuario = new System.Windows.Forms.PictureBox();
             this.pnlPrincipal = new System.Windows.Forms.Panel();
+            this.lblConsumos = new System.Windows.Forms.Label();
             this.pnlNavehación.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbUsuario)).BeginInit();
             this.SuspendLayout();
@@ -43,10 +43,10 @@
             // pnlNavehación
             // 
             this.pnlNavehación.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
+            this.pnlNavehación.Controls.Add(this.lblConsumos);
             this.pnlNavehación.Controls.Add(this.lblIngresos);
             this.pnlNavehación.Controls.Add(this.lblCheckOut);
             this.pnlNavehación.Controls.Add(this.lblCheckIn);
-            this.pnlNavehación.Controls.Add(this.lblVerReserva);
             this.pnlNavehación.Controls.Add(this.lblGestionReserva);
             this.pnlNavehación.Controls.Add(this.pbUsuario);
             this.pnlNavehación.Dock = System.Windows.Forms.DockStyle.Left;
@@ -59,47 +59,42 @@
             // lblIngresos
             // 
             this.lblIngresos.AutoSize = true;
-            this.lblIngresos.Location = new System.Drawing.Point(57, 422);
+            this.lblIngresos.Location = new System.Drawing.Point(61, 366);
             this.lblIngresos.Name = "lblIngresos";
             this.lblIngresos.Size = new System.Drawing.Size(59, 16);
             this.lblIngresos.TabIndex = 5;
             this.lblIngresos.Text = "Ingresos";
+            this.lblIngresos.Click += new System.EventHandler(this.lblIngresos_Click);
             // 
             // lblCheckOut
             // 
             this.lblCheckOut.AutoSize = true;
-            this.lblCheckOut.Location = new System.Drawing.Point(48, 383);
+            this.lblCheckOut.Location = new System.Drawing.Point(52, 291);
             this.lblCheckOut.Name = "lblCheckOut";
             this.lblCheckOut.Size = new System.Drawing.Size(68, 16);
             this.lblCheckOut.TabIndex = 4;
             this.lblCheckOut.Text = "Check Out";
+            this.lblCheckOut.Click += new System.EventHandler(this.lblCheckOut_Click);
             // 
             // lblCheckIn
             // 
             this.lblCheckIn.AutoSize = true;
-            this.lblCheckIn.Location = new System.Drawing.Point(47, 351);
+            this.lblCheckIn.Location = new System.Drawing.Point(51, 259);
             this.lblCheckIn.Name = "lblCheckIn";
             this.lblCheckIn.Size = new System.Drawing.Size(58, 16);
             this.lblCheckIn.TabIndex = 3;
             this.lblCheckIn.Text = "Check In";
-            // 
-            // lblVerReserva
-            // 
-            this.lblVerReserva.AutoSize = true;
-            this.lblVerReserva.Location = new System.Drawing.Point(47, 289);
-            this.lblVerReserva.Name = "lblVerReserva";
-            this.lblVerReserva.Size = new System.Drawing.Size(77, 16);
-            this.lblVerReserva.TabIndex = 2;
-            this.lblVerReserva.Text = "Ver reserva";
+            this.lblCheckIn.Click += new System.EventHandler(this.lblCheckIn_Click);
             // 
             // lblGestionReserva
             // 
             this.lblGestionReserva.AutoSize = true;
-            this.lblGestionReserva.Location = new System.Drawing.Point(43, 318);
+            this.lblGestionReserva.Location = new System.Drawing.Point(47, 226);
             this.lblGestionReserva.Name = "lblGestionReserva";
             this.lblGestionReserva.Size = new System.Drawing.Size(102, 16);
             this.lblGestionReserva.TabIndex = 1;
             this.lblGestionReserva.Text = "Gestion reserva";
+            this.lblGestionReserva.Click += new System.EventHandler(this.lblGestionReserva_Click);
             // 
             // pbUsuario
             // 
@@ -119,6 +114,16 @@
             this.pnlPrincipal.Size = new System.Drawing.Size(1134, 645);
             this.pnlPrincipal.TabIndex = 1;
             // 
+            // lblConsumos
+            // 
+            this.lblConsumos.AutoSize = true;
+            this.lblConsumos.Location = new System.Drawing.Point(52, 330);
+            this.lblConsumos.Name = "lblConsumos";
+            this.lblConsumos.Size = new System.Drawing.Size(71, 16);
+            this.lblConsumos.TabIndex = 6;
+            this.lblConsumos.Text = "Consumos";
+            this.lblConsumos.Click += new System.EventHandler(this.lblConsumos_Click);
+            // 
             // frmDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -128,6 +133,7 @@
             this.Controls.Add(this.pnlNavehación);
             this.Name = "frmDashboard";
             this.Text = "frmDashboard";
+            this.Load += new System.EventHandler(this.frmDashboard_Load_1);
             this.pnlNavehación.ResumeLayout(false);
             this.pnlNavehación.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbUsuario)).EndInit();
@@ -144,6 +150,6 @@
         private System.Windows.Forms.Label lblIngresos;
         private System.Windows.Forms.Label lblCheckOut;
         private System.Windows.Forms.Label lblCheckIn;
-        private System.Windows.Forms.Label lblVerReserva;
+        private System.Windows.Forms.Label lblConsumos;
     }
 }

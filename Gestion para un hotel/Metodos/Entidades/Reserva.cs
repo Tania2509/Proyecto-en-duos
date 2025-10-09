@@ -55,7 +55,7 @@ namespace Metodos.Entidades
             {
                 // Siempre traer la conexión
                 SqlConnection conexion = Conexion.Conexion.conectar();
-                string consultaQuery = @"INSERT INTO Reserva (cantidad, fechaEntrada, fechaSalida, id_Estado, id_Pago, id_Habitacion, id_Cliente) 
+                string consultaQuery = @"INSERT INTO Reserva (cantidadReserva, fechaEntrada, fechaSalida, id_Estado, id_Pago, id_Habitacion, id_Cliente) 
                             VALUES (@Cantidad, @FechaEntrada, @FechaSalida, 1, @IdPago, @IdHabitacion, @IdCliente)";
                 //En la insercion de estado, se pone 1 porque es el estado "En espera" y es el que siempre se asigna al crear una nueva reserva
 
@@ -97,7 +97,7 @@ namespace Metodos.Entidades
             }
         }
 
-        public bool ActualizarReserva ()
+        public bool ActualizarReserva()
         {
             try
             {
@@ -137,5 +137,26 @@ namespace Metodos.Entidades
                 return false;
             }
         }
+        
+
+        
+         public static int CapacidadHabitacion(int idHabitacion)
+         {
+            try
+            {
+                SqlConnection con = Conexion.Conexion.conectar();
+                string query = "SELECT cantidad FROM Habitacion WHERE idHabitaciones = @idHabitacion";
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@idHabitacion", idHabitacion);
+
+                object result = cmd.ExecuteScalar();
+                return result != null ? Convert.ToInt32(result) : 0;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al obtener capacidad de habitación: " + ex.Message);
+                return 0;
+            }
+         }
     }
 }
