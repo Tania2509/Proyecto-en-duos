@@ -240,5 +240,10 @@ namespace Vistas.Vistas
                 cbDui.Text = dgvReservas.CurrentRow.Cells["DUI del cliente"].Value.ToString();
             }
         }
+
+        private void cbCliente_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

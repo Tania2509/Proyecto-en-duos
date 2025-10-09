@@ -54,6 +54,12 @@
     <Compile Include="Vistas\frmDashboard.Designer.cs">
       <DependentUpon>frmDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\frmHabitaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\frmHabitaciones.Designer.cs">
+      <DependentUpon>frmHabitaciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\frnCheckIn.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     </Compile>
     <EmbeddedResource Include="Vistas\frmDashboard.resx">
       <DependentUpon>frmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\frmHabitaciones.resx">
+      <DependentUpon>frmHabitaciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\frnCheckIn.resx">
       <DependentUpon>frnCheckIn.cs</DependentUpon>
