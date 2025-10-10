@@ -57,8 +57,8 @@ namespace Metodos.Entidades
             {
                 // Siempre traer la conexión
                 SqlConnection conexion = Conexion.Conexion.conectar();
-                string consultaQuery = @"INSERT INTO Habitacion (cantidad, precio, numeroHabitacio, estadoHabitacion) 
-                            VALUES (@Cantidad, @precio,@numeroHabitacio, 1)";
+                string consultaQuery = @"INSERT INTO Habitacion (cantidad, precio, numeroHabitacion, estadoHabitacion) 
+                            VALUES (@Cantidad, @precio, @numeroHabitacion, 1)";
                 //En la insercion de estado, se pone 1 porque es el estado "En espera" y es el que siempre se asigna al crear una nueva reserva
 
                 SqlCommand insertar = new SqlCommand(consultaQuery, conexion);
@@ -66,7 +66,7 @@ namespace Metodos.Entidades
                 // Insertar o sustituir los parámetros con los datos
                 insertar.Parameters.AddWithValue("@Cantidad", cantidad);
                 insertar.Parameters.AddWithValue("@precio", precio );
-                insertar.Parameters.AddWithValue("@numeroHabitacio", numeroHabitacion);
+                insertar.Parameters.AddWithValue("@numeroHabitacion", numeroHabitacion);
 
 
                 insertar.ExecuteNonQuery();
@@ -109,6 +109,7 @@ namespace Metodos.Entidades
                           WHERE idHabitaciones = @idReserva";
 
                 SqlCommand cmd = new SqlCommand(comando, con);
+                cmd.Parameters.AddWithValue("@idReserva", id);
                 cmd.Parameters.AddWithValue("@numeroHabitacion", numeroHabitacion);
                 cmd.Parameters.AddWithValue("@cantidad", Cantidad);
                 cmd.Parameters.AddWithValue("@precio", Precio);

@@ -25,24 +25,23 @@ namespace Vistas.Vistas
             try
             {
                 // Validaciones de campos vacíos
-                if (string.IsNullOrWhiteSpace(txtCantidad.Text) ||
-                    string.IsNullOrWhiteSpace(txtNumeroHab.Text) ||
-                    string.IsNullOrWhiteSpace(txtPrecio.Text))
-
+                if ((string.IsNullOrWhiteSpace(txtNumero.Text) ||
+                string.IsNullOrWhiteSpace(txtCantidad.Text) ||
+                string.IsNullOrWhiteSpace(txtPrecio.Text)))
                 {
                     MessageBox.Show("No puedes dejar campos vacíos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     txtCantidad.Focus();
                     return;
                 }
 
-                // Crear objeto Reserva y asignar valores
                 Habitacion Hab = new Habitacion();
                 Hab.Cantidad =  int.Parse(txtCantidad.Text);
-                Hab.NumeroHabitacion = txtNumeroHab.Text;
+                Hab.NumeroHabitacion = txtNumero.Text;
                 Hab.Precio = Convert.ToDouble(txtPrecio.Text);
 
                 // Insertar la reserva
                 Hab.InsertarHabitación();
+                CargarHabitacion();
 
                 MessageBox.Show("Se registró correctamente la reserva", "Registro exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -72,7 +71,7 @@ namespace Vistas.Vistas
             }
 
             // Obtener el idReserva de la fila seleccionada
-            int idReserva = Convert.ToInt32(dgvHabitaciones.SelectedRows[0].Cells["idHabitafciones"].Value);
+            int idReserva = Convert.ToInt32(dgvHabitaciones.SelectedRows[0].Cells["idHabitaciones"].Value);
 
             // Crear instancia y asignar propiedades desde los controles
             Habitacion hab = new Habitacion
@@ -99,13 +98,13 @@ namespace Vistas.Vistas
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            Reserva reservaEliminar = new Reserva();
+            Habitacion Eliminar = new Habitacion();
             int id = int.Parse(dgvHabitaciones.CurrentRow.Cells[0].Value.ToString());
             string registroEliminar = dgvHabitaciones.CurrentRow.Cells[1].Value.ToString();
             DialogResult respueta = MessageBox.Show("¿Quieres eliminar este registro?" + registroEliminar, "Advertencia eliminaras un regsitro", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (respueta == DialogResult.Yes)
             {
-                if (reservaEliminar.eliminarReserva(id) == true)
+                if (Eliminar.EliminarHabitacion(id) == true)
                 {
                     MessageBox.Show("Se elimino correctamente el registro", "Registro eliminado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     CargarHabitacion();
@@ -114,6 +113,18 @@ namespace Vistas.Vistas
                 {
                     MessageBox.Show("No se pudo eliminar el registro", "Error al eliminar", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+            }
+        }
+
+        private void dgvHabitaciones_DoubleClick(object sender, EventArgs e)
+        {
+            if (dgvHabitaciones.CurrentRow != null)
+            {
+
+                txtPrecio.Text = dgvHabitaciones.CurrentRow.Cells["precio"].Value.ToString();
+                txtNumero.Text = dgvHabitaciones.CurrentRow.Cells["numeroHabitacion"].Value.ToString();
+                txtCantidad.Text = dgvHabitaciones.CurrentRow.Cells["cantidad"].Value.ToString();
+
             }
         }
     }

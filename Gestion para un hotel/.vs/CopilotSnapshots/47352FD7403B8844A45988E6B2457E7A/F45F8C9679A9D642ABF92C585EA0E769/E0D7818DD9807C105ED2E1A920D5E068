@@ -1,0 +1,36 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Metodos.Entidades
+{
+    public class Usuario
+    {
+
+        public bool VerificarLogin(string correo, string clave)
+        {
+
+            string hashEnBaseDeDatos = "";
+            SqlConnection conn = Conexion.Conexion.conectar();
+            string query = "SELECT contrasena FROM Usuarios WHERE nombreUsu = @nombreUsu";
+            SqlCommand cmd = new SqlCommand(query, conn);
+
+            cmd.Parameters.AddWithValue("@nombreUsu", correo);
+            MessageBox.Show("executescalar" + cmd.ExecuteScalar());
+
+            if (cmd.ExecuteScalar() == null)
+            {
+                return false;
+            }
+            else
+            {
+                hashEnBaseDeDatos = cmd.ExecuteScalar().ToString();
+                return BCrypt.Net.BCrypt.Verify(clave, hashEnBaseDeDatos);
+            }
+        }
+    }
+}

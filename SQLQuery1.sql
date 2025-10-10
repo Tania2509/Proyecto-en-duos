@@ -17,6 +17,7 @@ apellidoUsu varchar(50),
 dui varchar(8),
 fecha_nacimiento date,
 telefono varchar (9),
+contrasena varchar (255),
 id_Rol int,
 foreign key (id_Rol) references Rol (idRol)
 );
@@ -45,7 +46,9 @@ apellidoCli varchar(50),
 duiCli varchar(8),
 fechaNacimientoCli date,
 telefono varchar (10),
-Email varchar(50)
+Email varchar(50),
+id_Usuario int,
+foreign key (id_Usuario) references Usuario (idUsuario)
 );
 go
 
@@ -106,6 +109,7 @@ foreign key (id_Reserva) references Reserva (idReserva)
 );
 go
 
+
 select *from Ingreso
 select *from Consumo
 select *from Servicio
@@ -155,6 +159,12 @@ insert into EstadoHabitación values ('Vacia'),
 ('Ocupada')
 go
 
+INSERT INTO Usuario (nombreUsu, apellidoUsu, dui, fecha_nacimiento, telefono, contrasena, id_Rol)
+VALUES ('María', 'González', '12345678', '1990-05-15', '77778888', '$2a$12$n06n0cFLssX.4iu4cUWNP.5a602lsj7/Hou8FwBsyyCWEi529m/Ee', 1),
+('Carlos', 'Rodríguez', '87654321', '1985-08-22', '75556666', '$2a$12$SMnIt/JbOuZITsg19jwB.eHRnLz9FAG9ORxDG.BUJD6PVZ7b97pgW', 2),
+('Ana', 'Martínez', '56781234', '1992-11-30', '72223333', '$2a$12$H4Od24jU5VlSop7qb0ctYuHsVHv5T14pctBiOzxoe3GiaMmZokGXq', 3);
+go
+
 create view Reservaciones as
 select idReserva as Reserva, nombreEstadoRe as Estado, nombreCli as [Nombre del Cliente], duiCli as [DUI del cliente], numeroHabitacion as [Número de habitación], cantidadReserva as [Cantidad de personas], nombreMetodo as Pago, fechaEntrada as [Fecha de entrada], fechaSalida as [Fecha de salida]  from Reserva R
 inner join
@@ -167,7 +177,7 @@ INNER JOIN
 Cliente C ON C.idCliente=R.id_Cliente
 go
 
-create view Clientes as
+create view ClientesReservas as
 SELECT idCliente as Cliente, nombreCli as [Nombre del cliente], apellidoCli as [Apellido del cliente], duiCli as [DUI], nombreEstadoRe as [Estado] FROM Cliente C
 inner join
 Reserva R on R.id_Cliente= C.idCliente
@@ -184,3 +194,10 @@ INNER JOIN Cliente C ON R.id_Cliente = C.idCliente
 INNER JOIN Habitacion H ON R.id_Habitacion = H.idHabitaciones
 INNER JOIN EstadoReserva E ON R.id_Estado = E.idEstadoRe
 go
+
+create view Clientes as 
+select idCliente as Cliente, nombreCli as Nombre, apellidoCli as Apellido, duiCli as DUI, 
+fechaNacimientoCli as Fecha, telefono as Teléfono, Email from Cliente
+
+create view Servicios as
+select idServicio as Servicio, nombreServicio as Nombre, precio as Precio, descripcion as Descripción from Servicio

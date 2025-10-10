@@ -39,7 +39,7 @@ namespace Vistas.Vistas
         private void CargarClientes()
         {
             dgvClientes.DataSource = null;
-            dgvClientes.DataSource = Cliente.MostrarClientes();
+            dgvClientes.DataSource = Cliente.MostrarClientesEstancia();
         }
 
         private void frnConsumos_Load(object sender, EventArgs e)

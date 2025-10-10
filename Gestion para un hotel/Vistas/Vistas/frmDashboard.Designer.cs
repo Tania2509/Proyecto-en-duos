@@ -29,13 +29,16 @@
         private void InitializeComponent()
         {
             this.pnlNavehación = new System.Windows.Forms.Panel();
+            this.lblConsumos = new System.Windows.Forms.Label();
             this.lblIngresos = new System.Windows.Forms.Label();
             this.lblCheckOut = new System.Windows.Forms.Label();
             this.lblCheckIn = new System.Windows.Forms.Label();
             this.lblGestionReserva = new System.Windows.Forms.Label();
-            this.pbUsuario = new System.Windows.Forms.PictureBox();
             this.pnlPrincipal = new System.Windows.Forms.Panel();
-            this.lblConsumos = new System.Windows.Forms.Label();
+            this.lblClientes = new System.Windows.Forms.Label();
+            this.lblHabitacion = new System.Windows.Forms.Label();
+            this.pbUsuario = new System.Windows.Forms.PictureBox();
+            this.lblServicios = new System.Windows.Forms.Label();
             this.pnlNavehación.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbUsuario)).BeginInit();
             this.SuspendLayout();
@@ -43,6 +46,9 @@
             // pnlNavehación
             // 
             this.pnlNavehación.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
+            this.pnlNavehación.Controls.Add(this.lblServicios);
+            this.pnlNavehación.Controls.Add(this.lblHabitacion);
+            this.pnlNavehación.Controls.Add(this.lblClientes);
             this.pnlNavehación.Controls.Add(this.lblConsumos);
             this.pnlNavehación.Controls.Add(this.lblIngresos);
             this.pnlNavehación.Controls.Add(this.lblCheckOut);
@@ -56,10 +62,20 @@
             this.pnlNavehación.Size = new System.Drawing.Size(200, 645);
             this.pnlNavehación.TabIndex = 0;
             // 
+            // lblConsumos
+            // 
+            this.lblConsumos.AutoSize = true;
+            this.lblConsumos.Location = new System.Drawing.Point(43, 494);
+            this.lblConsumos.Name = "lblConsumos";
+            this.lblConsumos.Size = new System.Drawing.Size(71, 16);
+            this.lblConsumos.TabIndex = 6;
+            this.lblConsumos.Text = "Consumos";
+            this.lblConsumos.Click += new System.EventHandler(this.lblConsumos_Click);
+            // 
             // lblIngresos
             // 
             this.lblIngresos.AutoSize = true;
-            this.lblIngresos.Location = new System.Drawing.Point(61, 366);
+            this.lblIngresos.Location = new System.Drawing.Point(52, 530);
             this.lblIngresos.Name = "lblIngresos";
             this.lblIngresos.Size = new System.Drawing.Size(59, 16);
             this.lblIngresos.TabIndex = 5;
@@ -69,7 +85,7 @@
             // lblCheckOut
             // 
             this.lblCheckOut.AutoSize = true;
-            this.lblCheckOut.Location = new System.Drawing.Point(52, 291);
+            this.lblCheckOut.Location = new System.Drawing.Point(43, 455);
             this.lblCheckOut.Name = "lblCheckOut";
             this.lblCheckOut.Size = new System.Drawing.Size(68, 16);
             this.lblCheckOut.TabIndex = 4;
@@ -79,7 +95,7 @@
             // lblCheckIn
             // 
             this.lblCheckIn.AutoSize = true;
-            this.lblCheckIn.Location = new System.Drawing.Point(51, 259);
+            this.lblCheckIn.Location = new System.Drawing.Point(42, 423);
             this.lblCheckIn.Name = "lblCheckIn";
             this.lblCheckIn.Size = new System.Drawing.Size(58, 16);
             this.lblCheckIn.TabIndex = 3;
@@ -89,12 +105,40 @@
             // lblGestionReserva
             // 
             this.lblGestionReserva.AutoSize = true;
-            this.lblGestionReserva.Location = new System.Drawing.Point(47, 226);
+            this.lblGestionReserva.Location = new System.Drawing.Point(38, 390);
             this.lblGestionReserva.Name = "lblGestionReserva";
             this.lblGestionReserva.Size = new System.Drawing.Size(102, 16);
             this.lblGestionReserva.TabIndex = 1;
             this.lblGestionReserva.Text = "Gestion reserva";
             this.lblGestionReserva.Click += new System.EventHandler(this.lblGestionReserva_Click);
+            // 
+            // pnlPrincipal
+            // 
+            this.pnlPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlPrincipal.Location = new System.Drawing.Point(200, 0);
+            this.pnlPrincipal.Name = "pnlPrincipal";
+            this.pnlPrincipal.Size = new System.Drawing.Size(1134, 645);
+            this.pnlPrincipal.TabIndex = 1;
+            // 
+            // lblClientes
+            // 
+            this.lblClientes.AutoSize = true;
+            this.lblClientes.Location = new System.Drawing.Point(38, 212);
+            this.lblClientes.Name = "lblClientes";
+            this.lblClientes.Size = new System.Drawing.Size(102, 16);
+            this.lblClientes.TabIndex = 7;
+            this.lblClientes.Text = "Gestion clientes";
+            this.lblClientes.Click += new System.EventHandler(this.lblClientes_Click);
+            // 
+            // lblHabitacion
+            // 
+            this.lblHabitacion.AutoSize = true;
+            this.lblHabitacion.Location = new System.Drawing.Point(38, 260);
+            this.lblHabitacion.Name = "lblHabitacion";
+            this.lblHabitacion.Size = new System.Drawing.Size(133, 16);
+            this.lblHabitacion.TabIndex = 8;
+            this.lblHabitacion.Text = "Gestion habitaciones";
+            this.lblHabitacion.Click += new System.EventHandler(this.lblHabitacion_Click);
             // 
             // pbUsuario
             // 
@@ -106,23 +150,15 @@
             this.pbUsuario.TabIndex = 0;
             this.pbUsuario.TabStop = false;
             // 
-            // pnlPrincipal
+            // lblServicios
             // 
-            this.pnlPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlPrincipal.Location = new System.Drawing.Point(200, 0);
-            this.pnlPrincipal.Name = "pnlPrincipal";
-            this.pnlPrincipal.Size = new System.Drawing.Size(1134, 645);
-            this.pnlPrincipal.TabIndex = 1;
-            // 
-            // lblConsumos
-            // 
-            this.lblConsumos.AutoSize = true;
-            this.lblConsumos.Location = new System.Drawing.Point(52, 330);
-            this.lblConsumos.Name = "lblConsumos";
-            this.lblConsumos.Size = new System.Drawing.Size(71, 16);
-            this.lblConsumos.TabIndex = 6;
-            this.lblConsumos.Text = "Consumos";
-            this.lblConsumos.Click += new System.EventHandler(this.lblConsumos_Click);
+            this.lblServicios.AutoSize = true;
+            this.lblServicios.Location = new System.Drawing.Point(34, 314);
+            this.lblServicios.Name = "lblServicios";
+            this.lblServicios.Size = new System.Drawing.Size(110, 16);
+            this.lblServicios.TabIndex = 9;
+            this.lblServicios.Text = "Gestion servicios";
+            this.lblServicios.Click += new System.EventHandler(this.lblServicios_Click);
             // 
             // frmDashboard
             // 
@@ -151,5 +187,8 @@
         private System.Windows.Forms.Label lblCheckOut;
         private System.Windows.Forms.Label lblCheckIn;
         private System.Windows.Forms.Label lblConsumos;
+        private System.Windows.Forms.Label lblClientes;
+        private System.Windows.Forms.Label lblHabitacion;
+        private System.Windows.Forms.Label lblServicios;
     }
 }

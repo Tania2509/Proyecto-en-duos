@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.txtNumeroHab = new System.Windows.Forms.Panel();
+            this.txtNumero = new System.Windows.Forms.TextBox();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.txtCantidad = new System.Windows.Forms.TextBox();
@@ -37,18 +39,15 @@
             this.lblDui = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.dgvHabitaciones = new System.Windows.Forms.DataGridView();
-            this.txtPrecio = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.txtNumeroHab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHabitaciones)).BeginInit();
             this.SuspendLayout();
             // 
             // txtNumeroHab
             // 
-            this.txtNumeroHab.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNumeroHab.Controls.Add(this.textBox2);
+            this.txtNumeroHab.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtNumeroHab.Controls.Add(this.txtNumero);
             this.txtNumeroHab.Controls.Add(this.txtPrecio);
             this.txtNumeroHab.Controls.Add(this.btnActualizar);
             this.txtNumeroHab.Controls.Add(this.btnEliminar);
@@ -64,8 +63,24 @@
             this.txtNumeroHab.Size = new System.Drawing.Size(565, 333);
             this.txtNumeroHab.TabIndex = 1;
             // 
+            // txtNumero
+            // 
+            this.txtNumero.Location = new System.Drawing.Point(280, 43);
+            this.txtNumero.Name = "txtNumero";
+            this.txtNumero.Size = new System.Drawing.Size(233, 36);
+            this.txtNumero.TabIndex = 22;
+            // 
+            // txtPrecio
+            // 
+            this.txtPrecio.Location = new System.Drawing.Point(280, 102);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(233, 36);
+            this.txtPrecio.TabIndex = 3;
+            // 
             // btnActualizar
             // 
+            this.btnActualizar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnActualizar.Location = new System.Drawing.Point(201, 219);
             this.btnActualizar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnActualizar.Name = "btnActualizar";
@@ -77,6 +92,8 @@
             // 
             // btnEliminar
             // 
+            this.btnEliminar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnEliminar.Location = new System.Drawing.Point(376, 219);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEliminar.Name = "btnEliminar";
@@ -105,6 +122,8 @@
             // 
             // btnAgregar
             // 
+            this.btnAgregar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAgregar.Location = new System.Drawing.Point(28, 219);
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAgregar.Name = "btnAgregar";
@@ -134,6 +153,8 @@
             // 
             // dgvHabitaciones
             // 
+            this.dgvHabitaciones.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.dgvHabitaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvHabitaciones.Location = new System.Drawing.Point(29, 27);
             this.dgvHabitaciones.Name = "dgvHabitaciones";
@@ -141,20 +162,7 @@
             this.dgvHabitaciones.RowTemplate.Height = 24;
             this.dgvHabitaciones.Size = new System.Drawing.Size(368, 253);
             this.dgvHabitaciones.TabIndex = 2;
-            // 
-            // txtPrecio
-            // 
-            this.txtPrecio.Location = new System.Drawing.Point(280, 102);
-            this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(233, 36);
-            this.txtPrecio.TabIndex = 3;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(280, 48);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(233, 36);
-            this.textBox2.TabIndex = 3;
+            this.dgvHabitaciones.DoubleClick += new System.EventHandler(this.dgvHabitaciones_DoubleClick);
             // 
             // frmHabitaciones
             // 
@@ -184,7 +192,7 @@
         private System.Windows.Forms.Label lblDui;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.DataGridView dgvHabitaciones;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox txtPrecio;
+        private System.Windows.Forms.TextBox txtNumero;
     }
 }

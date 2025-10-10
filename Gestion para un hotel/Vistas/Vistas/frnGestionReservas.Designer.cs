@@ -181,7 +181,6 @@
             this.cbCliente.Name = "cbCliente";
             this.cbCliente.Size = new System.Drawing.Size(233, 31);
             this.cbCliente.TabIndex = 8;
-            this.cbCliente.SelectedIndexChanged += new System.EventHandler(this.cbCliente_SelectedIndexChanged);
             // 
             // lblDui
             // 

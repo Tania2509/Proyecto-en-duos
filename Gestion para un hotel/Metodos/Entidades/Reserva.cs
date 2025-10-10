@@ -103,7 +103,7 @@ namespace Metodos.Entidades
             {
                 SqlConnection con = Conexion.Conexion.conectar();
                 string comando = @"UPDATE Reserva SET 
-                          cantidad = @cantidad, 
+                          cantidadReserva = @cantidad, 
                           fechaEntrada = @fechaEntrada, 
                           fechaSalida = @fechaSalida, 
                           id_Pago = @id_Pago, 

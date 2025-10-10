@@ -12,12 +12,13 @@ namespace Vistas
         /// <summary>
         /// Punto de entrada principal para la aplicación.
         /// </summary>
+        public static string RolUsuario = "";
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmDashboard());
+            Application.Run(new frmLogin());
         }
     }
 }
