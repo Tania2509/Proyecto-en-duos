@@ -123,18 +123,6 @@ select *from Usuario
 select *from Rol
 
 
-
-/* INSERT INTO Cliente VALUES ('Juan Carlos', 'García López', '12345678', '1990-05-15', '77778888', 'juan.garcia@email.com'),
-('María Elena', 'Rodríguez Sánchez', '87654321', '1985-08-22', '76665555', 'maria.rodriguez@email.com'),
-('Carlos Antonio', 'Hernández Castro', '11223344', '1992-12-03', '74443333', 'carlos.hernandez@email.com');
-go
-
-INSERT INTO Servicio (nombreServicio, precio, descripcion) VALUES
-('Lavandería', 15.50, 'Servicio de lavado y planchado de ropa'),
-('Desayuno Buffet', 25.00, 'Buffet de desayuno continental e internacional'),
-('Spa y Masajes', 75.00, 'Servicio de spa con masajes relajantes y terapéuticos');
-*/
-
 INSERT INTO Habitacion VALUES ('101', 24, 5, 1),
 ('106', 21, 2, 1),
 ('100', 14, 1, 1)
@@ -161,8 +149,11 @@ go
 
 INSERT INTO Usuario (nombreUsu, apellidoUsu, dui, fecha_nacimiento, telefono, contrasena, id_Rol)
 VALUES ('María', 'González', '12345678', '1990-05-15', '77778888', '$2a$12$n06n0cFLssX.4iu4cUWNP.5a602lsj7/Hou8FwBsyyCWEi529m/Ee', 1),
+--Contra: Administrador
 ('Carlos', 'Rodríguez', '87654321', '1985-08-22', '75556666', '$2a$12$SMnIt/JbOuZITsg19jwB.eHRnLz9FAG9ORxDG.BUJD6PVZ7b97pgW', 2),
+--Contra: Recepcionista
 ('Ana', 'Martínez', '56781234', '1992-11-30', '72223333', '$2a$12$H4Od24jU5VlSop7qb0ctYuHsVHv5T14pctBiOzxoe3GiaMmZokGXq', 3);
+--Contra: Gerente
 go
 
 create view Reservaciones as
